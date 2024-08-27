@@ -3,36 +3,651 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-</head>
 
-<body>
+</head>
+<body class="no-footer-bg">
+    <div class="background-illustrations">
+        <div class="left-illustrations">
+            <img class="left-illustration left-illustration-1" src="img/illustrations/home-left-1.svg" alt="Illustration Left 1">
+            <img class="left-illustration left-illustration-2" src="img/illustrations/home-left-2.svg" alt="Illustration Left 2">
+            <img class="left-illustration left-illustration-3" src="img/illustrations/home-left-3.svg" alt="Illustration Left 3">
+            <img class="left-illustration left-illustration-4" src="img/illustrations/home-left-4.svg" alt="Illustration Left 4">
+            <img class="left-illustration left-illustration-5" src="img/illustrations/home-left-5.svg" alt="Illustration Left 5">
+            <img class="left-illustration left-illustration-6" src="img/illustrations/home-left-6.svg" alt="Illustration Left 6">
+            <img class="left-illustration left-illustration-7" src="img/illustrations/home-left-7.svg" alt="Illustration Left 7">
+        </div>
+        <div class="right-illustrations">
+            <img class="right-illustration right-illustration-1" src="img/illustrations/home-right-1.svg" alt="Illustration Right 1">
+            <img class="right-illustration right-illustration-2" src="img/illustrations/home-right-2.svg" alt="Illustration Right 2">
+            <img class="right-illustration right-illustration-3" src="img/illustrations/home-right-3.svg" alt="Illustration Right 3">
+            <img class="right-illustration right-illustration-4" src="img/illustrations/home-right-4.svg" alt="Illustration Right 4">
+            <img class="right-illustration right-illustration-5" src="img/illustrations/home-right-5.svg" alt="Illustration Right 5">
+            <img class="right-illustration right-illustration-6" src="img/illustrations/home-right-6.svg" alt="Illustration Right 6">
+        </div>
+    </div>
+    <div class="background-images">
+        <img class="bottom-left" src="img/illustrations/heroHome__left.svg" alt="Illustration One">
+        <img class="bottom-right" src="img/illustrations/heroHome__right.svg" alt="Illustration Two">
+    </div>
     <header class="header">
+  <div class="header__container">
+    <div class="header__upper">
+      <div class="header__left">
+        <ul class="gov-list">
+          <li class="gov-item">
+            <a href="/" class="gov-link">
+              <img src="img/logos/gov.svg" alt="Government Logo" />
+            </a>
+          </li>
+          <li class="gov-item">
+            <a href="/" class="gov-link">
+              <img src="img/logos/ansp.svg" alt="ANSP Logo" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__center">
+        <a href="/">
+          <h2>VACCINAREA ÎN REPUBLICA MOLDOVA</h2>
+        </a>
+      </div>
+      <div class="header__right">
+        <form action="#" class="header__search search">
+          <input type="text" placeholder="Search..." aria-label="Search" />
+          <button type="button" class="header__search-button">
+            <img src="img/icons/search.svg" alt="Search Icon" />
+          </button>
+        </form>
+        <ul class="header__socials">
+          <li>
+            <a href="/">
+              <img src="img/icons/instagram.svg" alt="Instagram"/>
+            </a>
+          </li>
+          <li>
+            <a href="/"><img src="img/icons/facebook.svg" alt="Facebook" /></a>
+          </li>
+          <li>
+            <a href="/"><img src="img/icons/youtube.svg" alt="YouTube" /></a>
+          </li>
+          <li>
+            <a href="/"><img src="img/icons/gmail.svg" alt="Gmail" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="header-nav">
+    <ul class="header-nav__list header-nav__container">
+      <li class="nav-list__item active">
+        <a class="nav-item__link" href="/">
+          <img src="img/icons/home.svg" alt="Home" />
+        </a>
+      </li>
+      <li class="nav-list__item">
+        <a class="nav-item__link" href="/">
+          <h5>Rolul vaccinurilor</h5>
+        </a>
+
+         <div class="submenu">
+          <div class="submenu-wrapper">
+            <ul class="submenu-list">
+              <li class="submenu-list__item">
+                <a class="submenu-item__link" href="/">
+                  <h6>Rolul platformei</h6>
+                </a>
+              </li>
+              <li class="submenu-list__item">
+                <a class="submenu-item__link" href="/">
+                  <h6>Importanța și beneficiile vaccinării</h6>
+                </a>
+              </li>
+              <li class="submenu-list__item">
+                <a class="submenu-item__link" href="/">
+                  <h6>Componentele vaccinului</h6>
+                </a>
+              </li>
+              <li class="submenu-list__item">
+                <a class="submenu-item__link" href="/">
+                  <h6>Dezvoltarea vaccinului</h6>
+                </a>
+              </li>
+              <li class="submenu-list__item">
+                <a class="submenu-item__link" href="/">
+                  <h6>Siguranța vaccinurilor</h6>
+                </a>
+              </li>
+              <li class="submenu-list__item">
+                <a class="submenu-item__link" href="/">
+                  <h6>Cum vaccinurile fortifică imunitatea?</h6>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </li>
+      <li class="nav-list__item">
+        <a class="nav-item__link" href="/">
+          <h5>Calendarul Național de Vaccinare</h5>
+          <img class="star" src="img/icons/star_filled.svg" alt="star">
+        </a>
+
+        <div class="submenu">
+          <div class="submenu-wrapper">
+            <ul class="submenu-list">
+              <li class="submenu-list__item">
+                <a class="submenu-item__link" href="/">
+                  <h6>HepB - Vaccinul împotriva Hepatitei virale B</h6>
+                </a>
+              </li>
+              <li class="submenu-list__item">
+                <a class="submenu-item__link" href="/">
+                  <h6>BCG - Vaccinul împotriva Tuberculozei</h6>
+                </a>
+              </li>
+              <li class="submenu-list__item">
+                <a class="submenu-item__link" href="/">
+                  <h6>VPO - Vaccinul împotriva Poliomielitei</h6>
+                </a>
+              </li>
+              <li class="submenu-list__item">
+                <a class="submenu-item__link" href="/">
+                  <h6>RV - Vaccinul împotriva Infecției rotavirale</h6>
+                </a>
+              </li>
+              <li class="submenu-list__item">
+                <a class="submenu-item__link" href="/">
+                  <h6>Hib - Vaccinul împotriva Infecției cu Hib</h6>
+                </a>
+              </li>
+              <li class="submenu-list__item">
+                <a class="submenu-item__link" href="/">
+                  <h6>PC - Vaccinul împotriva Infecției pneumococice</h6>
+                </a>
+              </li>
+              <li class="submenu-list__item">
+                <a class="submenu-item__link" href="/">
+                  <h6>DTP - Vaccinul împotriva Difteriei, Tetanosului, Pertussis</h6>
+                </a>
+              </li>
+              <li class="separator"></li>
+              <li class="submenu-list__item">
+                <a class="submenu-item__link" href="/">
+                  <h6>DT/Td - Vaccinul împotriva Difteriei, tetanosului</h6>
+                </a>
+              </li>
+              <li class="submenu-list__item">
+                <a class="submenu-item__link" href="/">
+                  <h6>ROR - Vaccinul împotriva Rujeolei, Oreionului, Rubeolei</h6>
+                </a>
+              </li>
+              <li class="separator"></li>
+              <li class="submenu-list__item">
+                <a class="submenu-item__link" href="/">
+                  <h6>Vaccinuri recomandate</h6>
+                  <img src="img/icons/chevron-right.svg" alt="arrow right">
+                </a>
+
+                <div class="submenu submenu-level-2">
+                    <div class="submenu-wrapper">
+                        <ul class="submenu-list">
+                            <li class="submenu-list__item">
+                                <a href="/" class="submenu-item__link">
+                                    <h6>Vaccinul împotriva COVID-19</h6>
+                                </a>
+                            </li>
+                            <li class="submenu-list__item">
+                                <a href="/" class="submenu-item__link">
+                                    <h6>Vaccinul împotriva Gripei sezoniere</h6>
+                                </a>
+                            </li>
+                            <li class="submenu-list__item">
+                                <a href="/" class="submenu-item__link">
+                                    <h6>Vaccinul împotriva Rabiei</h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </li>
+      <li class="nav-list__item">
+        <a class="nav-item__link" href="/">
+          <h5>Vaccinul împotriva HPV</h5>
+        </a>
+
+        <div class="submenu">
+            <div class="submenu-wrapper">
+              <ul class="submenu-list">
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Cancerul de col uterin</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Ce reprezintă vaccinul împotriva HPV?</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Cum acționează vaccinul?</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Vaccinarea băieților împotriva virusului HPV</h6>
+                  </a>
+                </li>
+                <li class="separator"></li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Certificatul de siguranță al vaccinului</h6>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+      </li>
+      <li class="nav-list__item">
+        <a class="nav-item__link" href="/">
+          <h5>Info pentru lucrătorii medicali</h5>
+        </a>
+
+        <div class="submenu">
+            <div class="submenu-wrapper">
+              <ul class="submenu-list">
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Protocoale</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Ghiduri</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Programul Național de Vaccinare</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Resurse utile</h6>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+      </li>
+      <li class="nav-list__item">
+        <a class="nav-item__link" href="/">
+          <h5>Întrebări frecvente</h5>
+        </a>
+
+        <div class="submenu">
+            <div class="submenu-wrapper">
+              <ul class="submenu-list">
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Întrebări și Răspunsuri</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Mituri despre vaccinare</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Vaccinarea în sarcină</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Vaccinarea în alăptare</h6>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+      </li>
+      <li class="nav-list__item">
+        <a class="nav-item__link" href="/">
+          <h5>Multimedia</h5>
+        </a>
+
+        <div class="submenu align-right">
+            <div class="submenu-wrapper">
+              <ul class="submenu-list">
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Știri despre vaccinare</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Video</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Infografice</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Galerie foto</h6>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+      </li>
+      <li class="nav-list__item">
+        <a class="nav-item__link" href="/">
+          <h5>Patrula Imunitară</h5>
+        </a>
+
+        <div class="submenu align-right">
+            <div class="submenu-wrapper">
+              <ul class="submenu-list">
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Ce reprezintă Patrula Imunitară?</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Pilotarea modului în școli</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Galerie foto</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Video</h6>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+      </li>
+      <li class="nav-list__item">
+        <a class="nav-item__link" href="/">
+          <h5>Răspuns la criza refugiaților</h5>
+        </a>
+
+        <div class="submenu align-right">
+            <div class="submenu-wrapper">
+              <ul class="submenu-list">
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Broșuri</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Materiale informative</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Suportul UE - OMS</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Galerie foto</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Video</h6>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+        </div>
+
+      </li>
+    </ul>
+  </nav>
 </header>
 
     <main>
-        <div class="dropdown" data-dropdown>
-            <button class="dropdown-button" data-dropdown-button>Dropdown</button>
-            <div class="dropdown-menu">
-                <div class="dropdown-links">
-                    <a href="#">All</a>
-                    <a href="#">Latest</a>
-                    <a href="#">Popular</a>
-                </div>
+        <div class="main__container">
+            <section class="hero">
+    <div class="hero-content__left">
+        <div class="card-calendar">
+            <div class="card-calendar__content">
+                <h3 class="title">Accesează calendarul interactiv al vaccinărilor!</h3>
+                <p class="description">Calendarul interactiv al vaccinărilor vă permite să introduceți data, luna și anul nașterii pentru a vedea perioadele de imunizare. Puteți descărca și printa acest calendar.</p>
+                
+                <form action="#" class="form">
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="day">Data nașterii:</label>
+                            <input type="text" id="day" name="day" placeholder="DD">
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Anul nașterii:</label>
+                            <input type="text" id="year" name="year" placeholder="YYYY">
+                        </div>
+                        <div class="form-group">
+                            <label for="month">Luna nașterii:</label>
+                            <input type="text" id="month" name="month" placeholder="MM">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gen:</label>
+                            <div class="gender-options">
+                                <label><input type="radio" name="gender" value="F"> F</label>
+                                <label><input type="radio" name="gender" value="M"> B</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="button button__blue button__submit">Vizualizează calendarul</button>
+                </form>
+                
+            </div>
+            <div class="card-calendar__image">
+                <img src="https://placehold.co/340x300" alt="test">
             </div>
         </div>
-        <div class="dropdown" data-dropdown>
-            <button class="dropdown-button" data-dropdown-button>Dropdown</button>
-            <div class="dropdown-menu">
-                Content 1
+    </div>
+    <div class="hero-content__right">
+        <div class="card-info card-ansp">
+            <p>Linia verde ANSP: <strong>080 012 300</strong></p>
+        </div>
+
+        <div class="card-info card-app">
+            <img src="img/med-safety-app.svg" alt="Aplicația Med Safety">
+            <p>Aplicația Med Safety</p>
+        </div>
+        <!-- <div class="card-info card-benefits">
+            <div class="swiper slider-benefits">
+                <div class="swiper-wrapper">
+                    <a class="swiper-slide">
+                        <div class="swiper-slide__body">
+                            <h3>Beneficiile vaccinării</h3>
+                            <img src="https://placehold.co/360x108" alt="test">
+                            <p>Epidemiile sunt un risc enorm pentru comunitate și sănătatea publică.</p>
+                        </div>
+                    </a>
+                    <a class="swiper-slide">
+                        <div class="swiper-slide__body">
+                            <h3>Lorem ipsum</h3>
+                            <img src="https://placehold.co/360x108" alt="test">
+                            <p>Epidemiile sunt un risc enorm pentru comunitate și sănătatea publică.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
+        </div>/ -->
+        <div class="card-info card-benefits">
+            <div class="swiper slider-benefits">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="swiper-slide__body">
+                        <h3 class="title">Beneficiile vaccinării</h3>
+                        <img src="https://placehold.co/360x108" alt="test">
+                        <p class="description">Epidemiile sunt un risc enorm pentru comunitate și sănătatea publică.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide__body">
+                        <h3 class="title">Beneficiile vaccinării</h3>
+                        <img src="https://placehold.co/360x108" alt="test">
+                        <p class="description">Epidemiile sunt un risc enorm pentru comunitate și sănătatea publică.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide__body">
+                        <h3 class="title">Beneficiile vaccinării</h3>
+                        <img src="https://placehold.co/360x108" alt="test">
+                        <p class="description">Epidemiile sunt un risc enorm pentru comunitate și sănătatea publică.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide__body">
+                        <h3 class="title">Beneficiile vaccinării</h3>
+                        <img src="https://placehold.co/360x108" alt="test">
+                        <p class="description">Epidemiile sunt un risc enorm pentru comunitate și sănătatea publică.</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide__body">
+                        <h3 class="title">Beneficiile vaccinării</h3>
+                        <img src="https://placehold.co/360x108" alt="test">
+                        <p class="description">Epidemiile sunt un risc enorm pentru comunitate și sănătatea publică.</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </div>
+</section>
+            <section class="news">
+    <div class="banners">
+        <a href="#">
+            <img src="https://placehold.co/360x108" alt="Vaccinare.gov.md">
+        </a>
+        <a href="#">
+            <img src="https://placehold.co/360x108" alt="Covidinfo.gov.md">
+        </a>
+    </div>
+    <div class="news-cards">
+        <div class="cards-wrapper">
+            <div class="col">
+                <a class="news-card" href="#">
+    <div class="news-card__body">
+        <div class="card-image">
+            <img src="https://placehold.co/232x180" alt="">
+        </div>
+        <div class="card-content">
+            <h4 class="card-content__title">Poliomielita</h4>
+            <p class="card-content__copy">Poliomielita sau paralizia infantila este o boala virala, infectioasa, produsa de virusul poliomielitic (virus din clasa enterovirusurilor) care poate determina paralizie, dificultati de respiratie si chiar deces. Pare sa existe din timpuri stravechi, fiind mentionat chiar si in picturile si sculpturile egiptene antice.</p>
+        </div>
+    </div>
+</a>
+
+            </div>
+            <div class="col">
+                <a class="news-card" href="#">
+                    <div class="news-card__body">
+                        <div class="card-image">
+                            <img src="https://placehold.co/232x180" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h4 class="card-content__title">Gripa - boală prevenibilă prin vaccinare prin vaccinare prin vaccinare!</h4>
+                            <p class="card-content__copy">Gripa, sau influenza, este o boală respiratorie contagioasă cauzată de anumiți viruși care ne invadează și ne infectează nasul, gâtul și chiar plămâni...</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a class="news-card" href="#">
+    <div class="news-card__body">
+        <div class="card-image">
+            <img src="https://placehold.co/232x180" alt="">
+        </div>
+        <div class="card-content">
+            <h4 class="card-content__title">Poliomielita</h4>
+            <p class="card-content__copy">Poliomielita sau paralizia infantila este o boala virala, infectioasa, produsa de virusul poliomielitic (virus din clasa enterovirusurilor) care poate determina paralizie, dificultati de respiratie si chiar deces. Pare sa existe din timpuri stravechi, fiind mentionat chiar si in picturile si sculpturile egiptene antice.</p>
+        </div>
+    </div>
+</a>
+
+            </div>
+            <div class="col">
+                <a class="news-card" href="#">
+    <div class="news-card__body">
+        <div class="card-image">
+            <img src="https://placehold.co/232x180" alt="">
+        </div>
+        <div class="card-content">
+            <h4 class="card-content__title">Poliomielita</h4>
+            <p class="card-content__copy">Poliomielita sau paralizia infantila este o boala virala, infectioasa, produsa de virusul poliomielitic (virus din clasa enterovirusurilor) care poate determina paralizie, dificultati de respiratie si chiar deces. Pare sa existe din timpuri stravechi, fiind mentionat chiar si in picturile si sculpturile egiptene antice.</p>
+        </div>
+    </div>
+</a>
+
+            </div>
+            
+        </div>
+        <a class="link link__secondary" href="#">Vezi toate noutățile</a>
+    </div>
+</section>
         </div>
     </main>
     <footer class="footer">
-
+    <div class="footer__container">
+        <div class="footer-wrapper">
+            <div class="footer__col">
+                <div class="content-wrapper">
+                    <h3>Aveți întrebări suplimentare?</h3>
+                    <p>Scrieți-ne un mesaj și noi vă ajutăm!</p>
+                </div>
+                <button class="button button__blue">Contactați-ne</button>
+            </div>
+            <div class="footer__col">
+                <img src="img/logos/ue.svg" alt="Uniunea Europeana">
+                <h3>Sursă oficială de informare despre procesul de vaccinare din Republica Moldova</h3>
+            </div>
+        </div>
+    </div>
 </footer>
 
+
+    <!--Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- GSAP JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    
 
     <script src="js/app.min.js"></script>
 </body>

@@ -128,10 +128,14 @@ export function sliders() {
                         el.classList.add('swiper-slide');
                     }
                 }
+
                 let slider_content = slider.innerHTML;
+
                 let slider_wrapper = document.createElement('div');
                 slider_wrapper.classList.add('swiper-wrapper');
                 slider_wrapper.innerHTML = slider_content;
+
+
                 slider.innerHTML = '';
                 slider.appendChild(slider_wrapper);
                 slider.classList.add('swiper-bild');

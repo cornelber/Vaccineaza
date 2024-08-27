@@ -1,17 +1,38 @@
+
 h1 {
+	@include adaptiv-value("font-size", 40, 30, 1);
+	font-weight: 500;
 }
 h2 {
+	@include adaptiv-value("font-size", 28, 18, 1);
+	font-weight: 600;
 }
 h3 {
+    @include adaptiv-value("font-size", 24, 18, 1);
+    // font-weight: 700;
 }
 h4 {
+    @include adaptiv-value("font-size", 16, 12, 1);
+    font-weight: 600;
 }
 h5 {
+    @include adaptiv-value("font-size", 14, 12, 1);
+    font-weight: 700;
 }
 h6 {
+    @include adaptiv-value("font-size", 12, 10, 1);
+    font-weight: 600;
 }
 p {
+    line-height: 24px;
 }
+
+.border-rounded {
+	border: 1px solid $gray-100;
+	border-radius: 1000px;
+}
+
+
 
 .no-scrollbar {
     -ms-overflow-style: none;

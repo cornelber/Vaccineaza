@@ -3,21 +3,22 @@
 // Conectarea MIXINURILOR ==============================================================================================================
 @import 'base/mixin.scss';
 // Conectarea Fonturilor
-// @import 'fonts.scss';
+@import 'fonts.scss';
+@import 'base/colors.scss';
 // Conectarea Fonturilor pentru Iconite
 // @import 'base/icons.scss';
 // Main Font =======================================================================================================================
-$fontFamily: '';
-$fontSize: rem(14px); // 14 - marimea textului din maket
+$fontFamily: 'Onest';
+$fontSize: rem(16px);
 // Culorile de baza ======================================================================================================================
-$maincolor: #000;
+$maincolor: #262626;
 // Setarile =================================================================================================================================
 // Marimea minima a ecranului
 $minWidth: 320;
 // Marimea frame-ului din design
 $maxWidth: 1920;
 // Marimea Containerului
-$maxWidthContainer: 1140;
+$maxWidthContainer: 1128;
 // Paddingul Containerului(15 din stanga/15 din dreapta)
 $containerPadding: 30;
 // Tipul adaptivului
@@ -100,5 +101,9 @@ $mobileSmall: rem(479.98px);
 @import 'components/__dropdown.scss';
 @import 'components/__burger.scss';
 @import 'components/__buttons.scss';
+@import 'components/__links.scss';
+@import 'components/_news-card.scss';
+
+
 // Conectarea stilurilor pentru pagini
-@import 'home';
+@import 'pages/home.scss';
