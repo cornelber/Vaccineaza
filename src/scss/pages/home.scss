@@ -238,8 +238,8 @@
                                         position: absolute;
                                         top: 50%; 
                                         left: 50%;
-                                        width: 13px; // Dimensiunea cercului interior
-                                        height: 13px; // Dimensiunea cercului interior
+                                        width: 12px; // Dimensiunea cercului interior
+                                        height: 12px; // Dimensiunea cercului interior
                                         transform: translate(-50%, -50%);
                                         border-radius: 50%; 
                                         background-color: transparent; 
@@ -251,7 +251,10 @@
                                             background-color: $gray-400;
                                         }
                                     }
+                                }
 
+                                label,
+                                input[type="radio"] {
                                     &:focus,
                                     &:hover {
                                         cursor: pointer;
