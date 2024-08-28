@@ -1,3 +1,26 @@
 .button {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 11px 0;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    gap: 10px;
+    transition:0.4s ease-in-out;
     
+    &__blue {
+        max-width: 221px;
+        color: $white;
+        background: linear-gradient(45deg, $blue-400, $blue-700 51%, $blue-400) 0% / 200%;
+        transition: background-position 0.4s ease-in-out, color 0.4s ease-in-out;
+
+        &:hover {
+            background-position: 100%;
+        }
+    }
+
+    &__submit {
+        max-width: 100%;
+    }
 }

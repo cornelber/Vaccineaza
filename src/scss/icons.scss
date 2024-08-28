@@ -19,3 +19,86 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-newspaper:before {
+    content: "\e907";
+}
+
+.icon-home:before {
+    content: "\e90c";
+}
+
+.icon-academic-info:before {
+    content: "\e900";
+}
+
+.icon-calendar:before {
+    content: "\e901";
+}
+
+.icon-camera:before {
+    content: "\e902";
+}
+
+.icon-chevron-double:before {
+    content: "\e903";
+}
+
+.icon-chevron-up-down:before {
+    content: "\e904";
+}
+
+.icon-chevron:before {
+    content: "\e905";
+}
+
+.icon-folder:before {
+    content: "\e906";
+}
+
+.icon-information-circle:before {
+    content: "\e908";
+}
+
+.icon-magnifying-glass-plus:before {
+    content: "\e909";
+}
+
+.icon-magnifying-glass:before {
+    content: "\e90a";
+}
+
+.icon-minus:before {
+    content: "\e90b";
+}
+
+.icon-play:before {
+    content: "\e90d";
+}
+
+.icon-plus:before {
+    content: "\e90e";
+}
+
+.icon-quote .path1:before {
+    content: "\e90f";
+    color: rgb(15, 23, 42);
+}
+
+.icon-quote .path2:before {
+    content: "\e910";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-star:before {
+    content: "\e911";
+}
+
+.icon-video-camera:before {
+    content: "\e912";
+}
+
+.icon-x-mark:before {
+    content: "\e913";
+}
