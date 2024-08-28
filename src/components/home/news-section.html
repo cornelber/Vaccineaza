@@ -1,37 +1,47 @@
 <section class="news">
     <div class="banners">
         <a href="#">
-            <img src="https://placehold.co/360x108" alt="Vaccinare.gov.md">
+            <img src="@img/banners/vaccinare.svg" alt="Vaccinare.gov.md" width="360" height="108">
         </a>
         <a href="#">
-            <img src="https://placehold.co/360x108" alt="Covidinfo.gov.md">
+            <img src="@img/banners/covid.svg" alt="Covidinfo.gov.md" width="360" height="108">
         </a>
     </div>
     <div class="news-cards">
         <div class="cards-wrapper">
             <div class="col">
-                @@include('../news-card.html')
+                <!-- todo: content personalizat pentru fiecare -->
+                @@include('../news-card.html', {
+                    'src': '@img/poliomielita.png',
+                    'alt': 'Poliomielita',
+                    'title': 'Poliomielita', 
+                    'description': 'Poliomielita sau paralizia infantila este o boala virala, infectioasa, produsa de virusul poliomielitic (virus din clasa enterovirusurilor) care poate determina paralizie, dificultati de respiratie si chiar deces. Pare sa existe din timpuri stravechi, fiind mentionat chiar si in picturile si sculpturile egiptene antice.',
+                })
             </div>
             <div class="col">
-                <a class="news-card" href="#">
-                    <div class="news-card__body">
-                        <div class="card-image">
-                            <img src="https://placehold.co/232x180" alt="">
-                        </div>
-                        <div class="card-content">
-                            <h4 class="card-content__title">Gripa - boală prevenibilă prin vaccinare prin vaccinare prin vaccinare!</h4>
-                            <p class="card-content__copy">Gripa, sau influenza, este o boală respiratorie contagioasă cauzată de anumiți viruși care ne invadează și ne infectează nasul, gâtul și chiar plămâni...</p>
-                        </div>
-                    </div>
-                </a>
+                @@include('../news-card.html', {
+                    'src': '@img/gripa.png',
+                    'alt': 'Gripa',
+                    'title': 'Gripa - boală prevenibilă prin vaccinare!', 
+                    'description': 'Gripa, sau influenza, este o boală respiratorie contagioasă cauzată de anumiți viruși care ne invadează și ne infectează nasul, gâtul și chiar plămâni...',
+                })
             </div>
             <div class="col">
-                @@include('../news-card.html')
+                @@include('../news-card.html', {
+                    'src': '@img/omicron.png',
+                    'alt': 'Omicron',
+                    'title': 'Noua variantă Omicron EG.5.1 al virusului COVID-19 “Eris”', 
+                    'description': 'De la prima apariție a noului coronavirus, numit COVID-19 la nivel global, acest virus și-a schimbat forma și a devenit, treptat, diferit de varianta...',
+                })
             </div>
             <div class="col">
-                @@include('../news-card.html')
+                @@include('../news-card.html', {
+                    'src': '@img/hpv.png',
+                    'alt': 'HPV',
+                    'title': 'Dovezile eficacității vaccinului contra HPV la băieți', 
+                    'description': 'Virusul papiloma uman (HPV) este un virus ADN dublu catenar care reprezintă cauza cea mai frecventă de infecție cu transmitere sexuală la ambele sexe. Deși inițial se credea că afectează în primul rând femeile, incidența infecției genitale cu HPV în rândul bărbaților este similară cu cea a femeilor.',
+                })
             </div>
-            
         </div>
         <a class="link link__secondary" href="#">Vezi toate noutățile</a>
     </div>

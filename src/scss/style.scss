@@ -6,7 +6,7 @@
 @import 'fonts.scss';
 @import 'base/colors.scss';
 // Conectarea Fonturilor pentru Iconite
-// @import 'base/icons.scss';
+@import './icons.scss';
 // Main Font =======================================================================================================================
 $fontFamily: 'Onest';
 $fontSize: rem(16px);
@@ -102,8 +102,9 @@ $mobileSmall: rem(479.98px);
 @import 'components/__burger.scss';
 @import 'components/__buttons.scss';
 @import 'components/__links.scss';
-@import 'components/_news-card.scss';
-
+@import 'components/__card.scss';
+@import 'components/__accordion.scss';
+@import 'components/__modal.scss';
 
 // Conectarea stilurilor pentru pagini
 @import 'pages/home.scss';

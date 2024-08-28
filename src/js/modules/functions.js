@@ -17,10 +17,28 @@ export function isWebp() {
 }
 
 export function burger(burger, menu, header) {
+    const navControls = document.querySelector('.header-nav__controls');
+
     burger.addEventListener('click', () => {
         burger.classList.toggle('active');
         menu.classList.toggle('active');
         document.body.classList.toggle('lock');
+
+        if(menu.classList.contains('active')) {
+            navControls.style.display = 'flex';
+            gsap.fromTo(menu,{ 
+                x: '100%', 
+                opacity: 0.5 
+            }, { 
+                x: '0%', 
+                opacity: 1, 
+                duration: 0.5, 
+                ease: 'power2.out' 
+            });
+        } else {
+            navControls.style.display = 'none';
+        }
+
         header ? (menu.style.top = `${header.offsetHeight}px`) : '';
     });
 }

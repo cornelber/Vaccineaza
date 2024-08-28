@@ -26,6 +26,10 @@
                 .content-wrapper {
                     text-align: center;
                     gap: 4px;
+
+                    p {
+                        color: $gray-300;
+                    }
                 }
             }
     
