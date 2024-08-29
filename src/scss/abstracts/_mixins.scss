@@ -74,3 +74,9 @@ $maxWidthContainer: 1110;
         transition: visibility 0.4s, opacity 0.4s;
     }
 }
+
+@mixin position-illustration($position, $top, $left, $right: null) {
+    top: $top;
+    left: $left;
+    right: $right;
+}

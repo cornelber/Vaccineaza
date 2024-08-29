@@ -17,8 +17,9 @@
         position: relative;
         background-color: $white;
         overflow: auto;
-        max-width: 90vw;
-        max-height: 90vh; // dvh de dat
+        max-width: 90dvw;
+        max-height: 80dvh;
+        margin: 16px;
 
         &__header {
             position: relative;
@@ -38,7 +39,7 @@
         &__body {
             padding: 24px;
             flex: 1;
-            // overflow: scroll
+            overflow-y: auto;
         }
     }
 
@@ -105,7 +106,7 @@
                             &:focus,
                             &:focus-visible {
                                 outline: none;
-                                border-color: $blue-400;
+                                border-color: $main-blue;
                             }
                         }
                     }
@@ -117,7 +118,7 @@
             .modal-content {
                 &__header {
                     align-items: start;
-                    padding-right: 50px;
+                    padding-right: 60px;
 
                     .modal-subtitle{
                         text-align: left;
@@ -143,7 +144,7 @@
         .modal-content {
             max-width: 1000px;
             max-height: 700px;
-            height: 90%;
+            height: 80dvh;
 
             &__header {
                 gap: 12px;

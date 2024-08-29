@@ -867,7 +867,7 @@ input {
   padding-top: 0;
 }
 .header .header-nav__list .submenu .submenu-list__item:hover {
-  background-color: #7CB9FF;
+  background-color: #8CC3FF;
   transition: all 0.2s ease-in-out;
 }
 .header .header-nav__list .submenu .submenu-list__item:hover i.icon-chevron {
@@ -1429,8 +1429,9 @@ input {
   position: relative;
   background-color: #FFFFFF;
   overflow: auto;
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 90dvw;
+  max-height: 80dvh;
+  margin: 16px;
 }
 .modal .modal-content__header {
   position: relative;
@@ -1449,6 +1450,7 @@ input {
 .modal .modal-content__body {
   padding: 24px;
   flex: 1;
+  overflow-y: auto;
 }
 .modal#contact-modal .modal-content {
   max-width: 800px;
@@ -1508,7 +1510,7 @@ input {
 @media (max-width: 39.99875rem) {
   .modal#contact-modal .modal-content__header {
     align-items: start;
-    padding-right: 50px;
+    padding-right: 60px;
   }
   .modal#contact-modal .modal-content__header .modal-subtitle {
     text-align: left;
@@ -1520,7 +1522,7 @@ input {
 .modal#calendar-modal .modal-content {
   max-width: 1000px;
   max-height: 700px;
-  height: 90%;
+  height: 80dvh;
 }
 .modal#calendar-modal .modal-content__header {
   gap: 12px;
@@ -1769,16 +1771,23 @@ input {
   position: absolute;
   top: 160px;
   left: 0;
-  max-width: 1920px;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: -1;
 }
-.background-illustrations .left-illustration,
-.background-illustrations .right-illustration {
+.background-illustrations__wrapper {
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+.background-illustrations .illustration {
   position: absolute;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
 }
 .background-illustrations .left-illustration {
+  top: 0;
   left: 0;
 }
 .background-illustrations .left-illustration-1 {
@@ -1810,6 +1819,7 @@ input {
   left: 4%;
 }
 .background-illustrations .right-illustration {
+  top: 0;
   right: 0;
 }
 .background-illustrations .right-illustration-1 {
@@ -1829,10 +1839,10 @@ input {
   right: 2%;
 }
 .background-illustrations .right-illustration-5 {
-  top: 90%;
+  top: 85%;
   right: 9%;
 }
 .background-illustrations .right-illustration-6 {
   top: 110%;
-  right: 3%;
+  right: 5%;
 }

@@ -1,20 +1,9 @@
-// Blue Palette temporary
-$blue-50: #E4F1FF;                  // Light blue shade (E4F1FF)
-$blue-100: rgba(0, 122, 255, 0.2);  // Primary blue - 20%
-$blue-200: rgba(0, 122, 255, 0.5);  // Primary blue - 50%
-$blue-300: #7CB9FF;                 // Blue shade (7CB9FF)
-$blue-400: #007AFF;                 // Primary blue
-$blue-500: #0171EC;                 // Hover blue
-$blue-600: #005EC3;
-$blue-700: #004999;
-
-// Base Colors
 // Blue Palette
 $main-blue: #007AFF;                              // Main blue
 $main-blue-stroke: #8CC3FF;                       // Main blue stroke
 $main-aliceblue: #F2F8FF;                         // Main aliceblue
-$hover-dark-blue: darken($main-blue, 15%);          // Hover dark blue
-$stroke-dark-blue: darken($main-blue, 25%);         // Stroke dark blue
+$hover-dark-blue: #0171EC;                        // Hover dark blue
+$stroke-dark-blue: #005EC3;                       // Stroke dark blue
 $hover-secondary-blue: lighten($main-blue, 20%);    // Hover secondary blue
 
 // Gray Palette
@@ -37,3 +26,6 @@ $yellow-shadow: #FFE97B;                  // Yellow shadow
 
 $green-bg: #EFFFE6;                       // Green background
 $green-shadow: #89EB52;                   // Green shadow
+
+// Gradients
+$button-gradient: linear-gradient(45deg, $main-blue, #004999 51%, $main-blue) 0% / 200%;

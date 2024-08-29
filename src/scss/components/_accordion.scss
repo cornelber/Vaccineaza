@@ -41,7 +41,7 @@
     }
 
     &[data-expanded="true"] {
-        border-color: $blue-400;
+        border-color: $main-blue;
         
         .accordion-body {
             overflow: visible;
