@@ -16,8 +16,10 @@
         flex-direction: column;
         position: relative;
         background-color: $white;
-        overflow: hidden;
-        width: 90%;
+        overflow: auto;
+        max-width: 90dvw;
+        max-height: 80dvh;
+        margin: 16px;
 
         &__header {
             position: relative;
@@ -37,6 +39,7 @@
         &__body {
             padding: 24px;
             flex: 1;
+            overflow-y: auto;
         }
     }
 
@@ -50,7 +53,7 @@
 
                 .modal-subtitle {
                     text-align: center;
-                    color: $gray-300;
+                    color: $text-secondary;
                 }
             }
 
@@ -89,21 +92,21 @@
                         input,
                         textarea {
                             padding: 24px 16px;
-                            border: 1px solid $gray-100;
+                            border: 1px solid $gray-stroke;
                             border-radius: 8px;
                             font-size: 16px;
                             font-weight: 400;
                             width: 100%;
-                            color: $gray-400;
+                            color: $text-main;
 
                             &:hover {
-                                border-color: $gray-200;
+                                border-color: $gray-stroke-hover;
                             }
 
                             &:focus,
                             &:focus-visible {
                                 outline: none;
-                                border-color: $blue-400;
+                                border-color: $main-blue;
                             }
                         }
                     }
@@ -115,7 +118,7 @@
             .modal-content {
                 &__header {
                     align-items: start;
-                    padding-right: 50px;
+                    padding-right: 60px;
 
                     .modal-subtitle{
                         text-align: left;
@@ -141,7 +144,7 @@
         .modal-content {
             max-width: 1000px;
             max-height: 700px;
-            height: 90%;
+            height: 80dvh;
 
             &__header {
                 gap: 12px;
@@ -201,7 +204,7 @@
 }
 
 .icon-x-mark {
-    color: $gray-400;
+    color: $text-main;
     float: right;
     font-size: 24px;
     font-weight: bold;

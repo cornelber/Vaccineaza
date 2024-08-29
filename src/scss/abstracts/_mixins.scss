@@ -50,10 +50,17 @@ $maxWidthContainer: 1110;
     justify-content: center;
 }
 
-@mixin border-rounded-shadow($border-color, $border-radius, $box-shadow-color) {
-    border: 1px solid $border-color;
+@mixin flex($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin border-rounded-shadow($border-color, $border-radius: 8px, $box-shadow-color) {
     border-radius: $border-radius;
     box-shadow: $box-shadow-color 4px 4px 0px;
+    border: 1px solid $border-color;
 }
 
 @mixin fade($type) {
@@ -66,4 +73,10 @@ $maxWidthContainer: 1110;
         opacity: 1;
         transition: visibility 0.4s, opacity 0.4s;
     }
+}
+
+@mixin position-illustration($position, $top, $left, $right: null) {
+    top: $top;
+    left: $left;
+    right: $right;
 }

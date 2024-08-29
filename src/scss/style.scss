@@ -1,61 +1,56 @@
 @use 'sass:math';
 @use '../../node_modules/sass-rem' as *;
-// Conectarea MIXINURILOR ==============================================================================================================
-@import 'base/mixin.scss';
-// Conectarea Fonturilor
-@import 'fonts.scss';
-@import 'base/colors.scss';
-// Conectarea Fonturilor pentru Iconite
-@import './icons.scss';
-// Main Font =======================================================================================================================
+
+// Importing Mixins and Base Colors
+@import './abstracts/mixins.scss';
+@import './abstracts/colors.scss';
+
+// Base Color
+$maincolor: $text-main;
+
+// Importing Fonts and Icon Fonts
+@import './base/fonts.scss';
+@import './base/icons';
+
+// Main Font Settings
 $fontFamily: 'Onest';
 $fontSize: rem(16px);
-// Culorile de baza ======================================================================================================================
-$maincolor: #262626;
-// Setarile =================================================================================================================================
-// Marimea minima a ecranului
-$minWidth: 320;
-// Marimea frame-ului din design
-$maxWidth: 1920;
-// Marimea Containerului
-$maxWidthContainer: 1128;
-// Paddingul Containerului(15 din stanga/15 din dreapta)
-$containerPadding: 30;
-// Tipul adaptivului
-// 1 - containerului nu are breakpoints
-// 2 - containerului are breakpoints(isi schimba marimea dupa breakpoint)
-$responsiveType: 1;
-// Marimea cand lucreaza primul breakpoint
-$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Container and Breakpoint Settings
+$minWidth: 320;             // Marimea minima a ecranului
+$maxWidth: 1920;            // Marimea frame-ului din design
+$maxWidthContainer: 1128;   // Marimea Containerului
+$containerPadding: 30;      // Paddingul Containerului(15 din stanga/15 din dreapta)
+$responsiveType: 1;         // Tipul adaptiv: 1 - containerul nu are breakpoints; 2 - containerul are breakpoints
+$containerWidth: $maxWidthContainer + $containerPadding;    // Marimea cand lucreaza primul breakpoint
+
 // Breakpoints
 $pc: rem($containerWidth + px);
 $tablet: rem(991.98px);
 $mobile: rem(767.98px);
 $mobileMedium: rem(639.98px);
 $mobileSmall: rem(479.98px);
-// Stilurile de baza
-@import 'base/null.scss';
+
+// Importing Reset Styles
+@import './base/reset.scss';
+
+// Wrapper Styles
 .wrapper {
     min-width: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     min-height: 100vh;
-    // Impingem footerul jos
-    > main {
+    > main {                // Impingem footerul jos
         flex: 1 1 auto;
     }
-    // Fixarea sliderurilor
-    > * {
+    > * {                   // Fixarea sliderurilor
         min-width: 0;
     }
 }
 
-// Containerul
-
-/* Stilurile vor merge cu toate clasele care contin: __container
-   Exemplu: header__container, main__container, __container */
-
+// Container Styles
+// Applied to classes containing "__container" (header__container, main__container, etc)
 @if ($responsiveType==1) {
     [class*='__container'] {
         @if ($maxWidthContainer>0) {
@@ -93,18 +88,23 @@ $mobileSmall: rem(479.98px);
     }
 }
 
-// Conectarea stilurilor comune
-@import 'ui';
-// Conectarea stilurilor pentru blocuri aparte
-@import 'components/__footer.scss';
-@import 'components/__header.scss';
-@import 'components/__dropdown.scss';
-@import 'components/__burger.scss';
-@import 'components/__buttons.scss';
-@import 'components/__links.scss';
-@import 'components/__card.scss';
-@import 'components/__accordion.scss';
-@import 'components/__modal.scss';
+// Importing Common Styles
+@import './base/ui.scss';
 
-// Conectarea stilurilor pentru pagini
+// Importing Component Styles
+@import 'layout/footer.scss';
+@import 'layout/header.scss';
+@import 'components/dropdown.scss';
+@import 'components/burger.scss';
+@import 'components/buttons.scss';
+@import 'components/links.scss';
+@import 'components/card.scss';
+@import 'components/accordion.scss';
+@import 'components/modal.scss';
+@import 'vendors/swiper.scss';
+
+// Importing Page Sections
+@import 'components/sections.scss';
+
+// Importing Page Styles
 @import 'pages/home.scss';

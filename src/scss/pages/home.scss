@@ -1,4 +1,4 @@
-// Illustrations
+// // Illustrations
 .background-images {
     position: fixed; 
     top: 0;
@@ -49,487 +49,82 @@
     position: absolute;
     top: 160px;
     left: 0;
-    max-width: 1920px;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     z-index: -1;
 
-    .left-illustration,
-    .right-illustration {
+    &__wrapper {
+        position: relative;
+        max-width: 1920px;
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+    }
+
+    .illustration {
         position: absolute;
+        transition: transform 0.6s ease-out, opacity 0.6s ease-out;
     }
 
+    // Left illustrations
     .left-illustration {
-        left: 0;
+        @include position-illustration(left, 0, 0);
+
+        &-1 {
+            @include position-illustration(left, 5%, 2%);
+        }
+
+        &-2 {
+            @include position-illustration(left, 20%, 10%);
+        }
+
+        &-3 {
+            @include position-illustration(left, 35%, 3%);
+        }
+
+        &-4 {
+            @include position-illustration(left, 55%, 11%);
+        }
+
+        &-5 {
+            @include position-illustration(left, 65%, 2%);
+        }
+
+        &-6 {
+            @include position-illustration(left, 90%, 10%);
+        }
+
+        &-7 {
+            @include position-illustration(left, 110%, 4%);
+        }
     }
 
-    .left-illustration-1 {
-        top: 5%;
-        left: 2%;
-    }
-    
-    .left-illustration-2 {
-        top: 20%;
-        left: 10%;
-    }
-    
-    .left-illustration-3 {
-        top: 35%;
-        left: 3%;
-    }
-    
-    .left-illustration-4 {
-        top: 55%;
-        left: 11%;
-    }
-    
-    .left-illustration-5 {
-        top: 65%;
-        left: 2%;
-    }
-    
-    .left-illustration-6 {
-        top: 90%;
-        left: 10%;
-    }
-    
-    .left-illustration-7 {
-        top: 110%;
-        left: 4%;
-    }
-
-    // Right illustration
+    // Right illustrations
     .right-illustration {
-        right: 0;
-    }
+        @include position-illustration(right, 0, null, 0);
 
-    .right-illustration-1 {
-        top: 5%;
-        right: 10%;
-    }
-
-    .right-illustration-2 {
-        top: 20%;
-        right: 2%;
-    }
-
-    .right-illustration-3 {
-        top: 45%;
-        right: 9%;
-    }
-
-    .right-illustration-4 {
-        top: 60%;
-        right: 2%;
-    }
-
-    .right-illustration-5 {
-        top: 90%;
-        right:9%;
-    }
-
-    .right-illustration-6 {
-        top: 110%;
-        right: 3%;
-    }
-}
-
-
-// Hero Section
-.hero {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 24px;
-    margin: 24px 0;
-
-    &-content__left {
-       grid-column: span 8;
-        
-        .card-calendar {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            padding: 32px;
-            gap: 24px;
-            height: 100%;
-            background-color: $blue-bg-secondary;
-            @include border-rounded-shadow($blue-50, 0px, $blue-100);
-
-
-            &__content {
-                grid-column: span 6;
-                .title {
-                    text-align: center;
-                    padding-bottom: 6px;
-                }
-
-                .description {
-                    text-align: justify;
-                    padding-bottom: 24px;
-                    color: $gray-300;
-                }
-                .form {
-                    .form-container {
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-                        gap: 10px;
-                        margin-bottom: 24px;
-    
-                        .form-group {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 4px;
-                            width: 100%;
-                            border: 1px solid $blue-50;
-                            border-radius: 8px;
-                            padding: 12px;
-                            background-color: $white;
-                            
-                            label {
-                                font-size: 16px;
-                                color: $gray-300;
-                            }
-                            
-                            input[type="text"] {
-                                padding-top: 8px;
-                                font-size: 16px;
-                                font-weight: 600;
-                                width: 100%; // Input-urile nu depășesc dimensiunea containerului
-                                box-sizing: border-box;
-                                color: $blue-400;
-                                background-color: transparent;
-
-                                &::placeholder {
-                                    color: $gray-400;
-                                    opacity: 1;
-                                }
-
-                                &:focus,
-                                &:hover {
-                                    outline: none;
-                                    color: $blue-400;
-                                    cursor: pointer;
-
-                                    &::placeholder {
-                                        color: $blue-400;
-                                    }
-                                }
-                            }
-
-                            .gender-options {
-                                display: flex;
-                                gap: 12px;
-                                align-items: center;
-                                width: 100%;
-
-                                label {
-                                    display: flex;
-                                    align-items: center;
-                                    gap: 6px;
-                                    color: $gray-400;
-                                    font-size: 16px;
-                                    font-weight: 600;
-                                    padding-top: 8px;
-                                }
-
-                                input[type="radio"] {
-                                    position: relative;
-                                    width: 24px;
-                                    height: 24px;
-                                    appearance: none;
-                                    border: 2px solid $gray-400; 
-                                    border-radius: 50%; 
-                                    outline: none;
-
-                                    &::before {
-                                        content: "";
-                                        position: absolute;
-                                        top: 50%; 
-                                        left: 50%;
-                                        width: 12px; // Dimensiunea cercului interior
-                                        height: 12px; // Dimensiunea cercului interior
-                                        transform: translate(-50%, -50%);
-                                        border-radius: 50%; 
-                                        background-color: transparent; 
-                                        transition: background-color 0.3s ease; 
-                                    }
-
-                                    &:checked {
-                                        &::before {
-                                            background-color: $gray-400;
-                                        }
-                                    }
-                                }
-
-                                label,
-                                input[type="radio"] {
-                                    &:focus,
-                                    &:hover {
-                                        cursor: pointer;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            &__image {
-                grid-column: span 6;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                img {
-                    display: block;
-                    width: 100%;
-                    height: auto;
-                }
-            }
-        }
-    }
-
-    &-content__right {
-        grid-column: span 4;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-
-        .card-info {
-            @include flex-center;
-            width: 100%;
-            padding: 16px;
-            gap: 10px;
-            color: $gray-400;
-            text-align: center;
+        &-1 {
+            @include position-illustration(right, 5%, null, 10%);
         }
 
-        .card-ansp,
-        .card-app {
-            max-height: 70px;
-            height: 100%;
+        &-2 {
+            @include position-illustration(right, 20%, null, 2%);
         }
 
-        .card-ansp {
-            background-color: $green-bg;
-            @include border-rounded-shadow($green-bg, 0px, $green-shadow);
+        &-3 {
+            @include position-illustration(right, 45%, null, 9%);
         }
 
-        .card-app {
-            background-color: $yellow-bg;
-            @include border-rounded-shadow($yellow-bg, 0px, $yellow-shadow);
-
-            p {
-                text-decoration: underline;
-            }
+        &-4 {
+            @include position-illustration(right, 60%, null, 2%);
         }
 
-        .card-benefits {
-            background-color: $blue-bg-secondary;
-            @include border-rounded-shadow($blue-50, 0px, $blue-100);
-            height: 100%;
-
-            .slider-benefits {
-                width: 100%;
-                height: 100%;
-                
-                .swiper-slide {
-                  text-align: center;
-                  font-size: 18px;
-                  display: flex;
-                  justify-content: center;
-                  align-items: stretch;
-                  padding-bottom: 36px;
-
-                  &__body {
-                    display: flex;
-                    flex-direction: column;
-
-                    .title {
-                       font-size: 20px; 
-                       padding-bottom: 16px;
-                    }
-
-                    .description {
-                        font-size: 16px;
-                    }
-                  }
-                }
-                
-                .swiper-slide img {
-                  display: block;
-                  margin: 0 auto 16px;
-                  width: 100%;
-                  height: 100%;
-                }
-
-                .swiper-pagination {
-                    &-bullet {
-                        width: 11px;
-                        height: 11px;
-                        border: 1px solid $gray-400;
-                        background-color: transparent;
-
-                        &-active {
-                            border: 1px solid $blue-400;
-                        }
-                    }
-                }
-            }
-          
-          
-        
-            .card-ansp img {
-                display: block;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-    }
-
-    @media (max-width: $tablet) {
-        &-content__left {
-            grid-column: span 12;
+        &-5 {
+            @include position-illustration(right, 85%, null, 9%);
         }
 
-        &-content__right {
-            grid-column: span 12;
-            display: grid;
-            grid-template-columns: repeat(12, 1fr); 
-            grid-template-rows: auto auto;
-
-            .card-ansp {
-                grid-column: 1 / span 6;
-                grid-row: 1;
-                
-            }
-
-            .card-app {
-                grid-column: 7 / span 6;
-                grid-row: 1;
-            }
-
-            .card-benefits {
-                grid-column: 1 / span 12;
-                grid-row: 2 / span 2;
-            }
+        &-6 {
+            @include position-illustration(right, 110%, null, 5%);
         }
-    }
-
-    @media (max-width: $mobileMedium) {
-        &-content__left {
-            .card-calendar {
-                grid-template-rows: auto auto;
-                &__content {
-                    grid-column: span 12;
-                    grid-row: 2;
-                }
-
-                &__image {
-                    grid-column: span 12;
-                    grid-row: 1;
-                }
-            }
-        }
-
-        &-content__right {
-            .card-ansp,
-            .card-app {
-                height: 70px;
-            }
-
-            .card-ansp {
-                grid-column: span 12;
-                grid-row: 1;
-            }
-
-            .card-app {
-                grid-column: span 12;
-                grid-row: 2;
-            }
-            .card-benefits {
-                grid-column: span 12;
-                grid-row: 3
-            }
-        }
-    }
-
-    @media (max-width: $mobileSmall) {
-        &-content__left {
-            grid-column: span 12;
-            .card-calendar {
-                padding: 16px;  
-                &__content {
-                    .form {
-                        .form-container {
-                            grid-template-columns: repeat(1, 1fr);
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-// News Section
-.news {
-    display: flex;
-    flex-direction: column;
-    margin: 24px 0;
-    gap: 24px;
-
-    .banners {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 24px;
-
-        a {
-            img {
-                max-width: 360px;
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-            }
-        }
-
-        @media (max-width: $mobileSmall) {
-            flex-direction: column;
-        }
-    }
-
-    .news-cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .cards-wrapper {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: auto;
-            gap: 24px;
-            margin-bottom: 32px;
-
-            .col {
-                grid-column: span 3;
-            }
-        }
-
-        @media (max-width: $tablet) {
-            .cards-wrapper {
-                @include adaptiv-value("gap", 16, 10, 1);
-            }
-        }
-
-        @media (max-width: $mobileMedium) {
-            .cards-wrapper {
-                @include adaptiv-value("gap", 24, 12, 1);
-                .col {
-                    grid-column: span 6;
-                }
-            }
-        }
-    }
-    
-    @media (max-width: $mobileMedium) {
-        margin-bottom: 8px;
     }
 }

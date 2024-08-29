@@ -1,0 +1,31 @@
+// Blue Palette
+$main-blue: #007AFF;                              // Main blue
+$main-blue-stroke: #8CC3FF;                       // Main blue stroke
+$main-aliceblue: #F2F8FF;                         // Main aliceblue
+$hover-dark-blue: #0171EC;                        // Hover dark blue
+$stroke-dark-blue: #005EC3;                       // Stroke dark blue
+$hover-secondary-blue: lighten($main-blue, 20%);    // Hover secondary blue
+
+// Gray Palette
+$text-main: #262626;                      // Text - main
+$text-secondary: #757A89;                 // Text - secondary
+$gray-bg: #FAFAFA;                        // Gray background
+$gray-stroke: #ECECEC;                    // Gray stroke
+$gray-stroke-hover: #B6B6B6;              // Gray stroke hover
+$gray-stroke-secondary: #DEDEDE;          // Stroke secondary
+$gray-shadow: #EEEEEE;                    // Gray Box shadow
+$blue-shadow: #BAD5F3;                    // Blue box shadow
+$blue-bg-secondary: #F2F8FF;
+
+// Other Colors
+$white: #FFFFFF;                          // Backgrounds, text, etc.
+$error: #FF3B30;                          // Error messages, warnings
+
+$yellow-bg: #FFFEE8;                      // Yellow background
+$yellow-shadow: #FFE97B;                  // Yellow shadow
+
+$green-bg: #EFFFE6;                       // Green background
+$green-shadow: #89EB52;                   // Green shadow
+
+// Gradients
+$button-gradient: linear-gradient(45deg, $main-blue, #004999 51%, $main-blue) 0% / 200%;

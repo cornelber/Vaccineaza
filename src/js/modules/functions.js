@@ -20,42 +20,39 @@ export function burger(burger, menu, header) {
     const navControls = document.querySelector('.header-nav__controls');
 
     burger.addEventListener('click', () => {
+        const isActive = menu.classList.toggle('active');
         burger.classList.toggle('active');
-        menu.classList.toggle('active');
-        document.body.classList.toggle('lock');
+        document.body.classList.toggle('lock', isActive);
 
-        if(menu.classList.contains('active')) {
+        if (isActive) {
             navControls.style.display = 'flex';
-            gsap.fromTo(menu,{ 
-                x: '100%', 
-                opacity: 0.5 
-            }, { 
-                x: '0%', 
-                opacity: 1, 
-                duration: 0.5, 
-                ease: 'power2.out' 
-            });
+            gsap.fromTo(menu, { x: '100%', opacity: 0.5 }, { x: '0%', opacity: 1, duration: 0.5, ease: 'power2.out' });
+            disableScroll();
         } else {
             navControls.style.display = 'none';
+            enableScroll();
         }
 
-        header ? (menu.style.top = `${header.offsetHeight}px`) : '';
+        if (header) menu.style.top = `${header.offsetHeight}px`;
     });
+
+    function disableScroll() {
+        document.body.style.overflow = 'hidden';
+    }
+
+    function enableScroll() {
+        document.body.style.overflow = '';
+    }
 }
 
 export function fixedHeader(header) {
     const main = document.querySelector('main');
+
     window.addEventListener('scroll', () => {
         const scrollPos = window.scrollY;
-        if (scrollPos > header.offsetHeight + 30) {
-            header.classList.add('sticky');
-            main.style.marginTop = header.offsetHeight;
-            document.querySelector('main').style.marginTop = `${header.offsetHeight}px`;
-        } else {
-            main.style.marginTop = null;
-            header.classList.remove('sticky');
-            document.querySelector('main').style.marginTop = null;
-        }
+        const isSticky = scrollPos > header.offsetHeight + 30;
+        header.classList.toggle('sticky', isSticky);
+        main.style.marginTop = isSticky ? `${header.offsetHeight}px` : '';
     });
 }
 

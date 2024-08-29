@@ -12,7 +12,7 @@
     &__blue {
         max-width: 221px;
         color: $white;
-        background: linear-gradient(45deg, $blue-400, $blue-700 51%, $blue-400) 0% / 200%;
+        background: $button-gradient;
         transition: background-position 0.4s ease-in-out, color 0.4s ease-in-out;
 
         &:hover {

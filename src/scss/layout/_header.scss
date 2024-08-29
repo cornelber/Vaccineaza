@@ -91,7 +91,7 @@
 
                 &:hover,
                 &:has(input:focus) {
-                    border-color: $gray-200;
+                    border-color: $gray-stroke-hover;
                 }
         
                 .header__search-button {
@@ -178,7 +178,7 @@
 
     .header-nav {
         position: relative;
-        background-color: $blue-400;
+        background-color: $main-blue;
         z-index: 5;
 
         .header-nav__controls {
@@ -186,19 +186,19 @@
             align-items: center;
             padding: 24px 0;
             gap: 24px;
-            border-top: 1px solid $gray-100;
-            border-bottom: 1px solid $gray-100;
+            border-top: 1px solid $gray-stroke;
+            border-bottom: 1px solid $gray-stroke;
             .nav-item__link {
                 .icon-home {
                     font-size: 24px;
-                    color: $gray-400;
+                    color: $text-main;
                     transition: color 0.2s ease-in-out;
                 }
 
                 &:hover,
                 &:focus {
                     .icon-home {
-                        color: $blue-400;
+                        color: $main-blue;
                     }
                 }
             }
@@ -215,7 +215,7 @@
 
                 &:hover,
                 &:has(input:focus) {
-                    border-color: $gray-200;
+                    border-color: $gray-stroke-hover;
                 }
         
                 .header__search-button {
@@ -249,7 +249,7 @@
                 position: relative;
                 display: flex;
                 align-items: center;
-                border: 1px solid $blue-400;
+                border: 1px solid $main-blue;
                 margin: 0 1px;
 
                 &:nth-child(n+7) {
@@ -260,9 +260,9 @@
 
                 &:hover,
                 &.active {
-                    background-color: $blue-500;
-                    border-right: 1px solid $blue-600;
-                    border-left: 1px solid $blue-600;
+                    background-color: $hover-dark-blue;
+                    border-right: 1px solid $stroke-dark-blue;
+                    border-left: 1px solid $stroke-dark-blue;
                     transition: all 0.2s ease-in-out;
 
                     .submenu {
@@ -305,7 +305,7 @@
                 .submenu-list__item {
                     position: relative;
                     background-color: $white;
-                    color: $gray-400;
+                    color: $text-main;
                     font-size: 12px;
 
                     .submenu-item__link {
@@ -336,7 +336,7 @@
                     }
 
                     &:hover {
-                        background-color: $blue-300;
+                        background-color: $main-blue-stroke;
                         transition: all 0.2s ease-in-out;
 
                         i.icon-chevron {
@@ -351,7 +351,7 @@
                 }
 
                 .separator {
-                    background: $gray-100;
+                    background: $gray-stroke;
                     height: 1px;
                 }
             }
@@ -376,7 +376,7 @@
                     flex-direction: column;
                     align-items: start;
                     border: unset;
-                    border-bottom: 1px solid $gray-100;
+                    border-bottom: 1px solid $gray-stroke;
                     transition: color 0.2s ease-in-out;
 
                     &:first-child {
@@ -388,7 +388,7 @@
                         width: 100%;
                         display: flex;
                         justify-content: start;
-                        color: $blue-400;
+                        color: $main-blue;
                         transition: color 0.2s ease-in-out;
 
                         i.icon-star {
@@ -401,7 +401,7 @@
                     &:hover,
                     &:focus,
                     &:active {
-                        background-color: $blue-400;
+                        background-color: $main-blue;
 
                         .nav-item__link {
                             color: $white;
@@ -422,11 +422,10 @@
     
                     .submenu-list__item {
                         background-color: $white;
-                        // color: $blue-400;
 
                         .submenu-item__link {
                             padding: 12px 24px;
-                            color: $gray-400;
+                            color: $text-main;
     
                             img {
                                 display: none;
@@ -435,7 +434,7 @@
                             &:hover,
                             &:focus,
                             &.active {
-                                background-color: $blue-400;
+                                background-color: $main-blue;
                                 color: $white;
                                 transition: all 0.2s ease-in-out;
                             }
