@@ -1,4 +1,3 @@
-
 h1 {
 	@include adaptiv-value("font-size", 40, 28, 1);
 	font-weight: 500;
@@ -29,8 +28,19 @@ p {
     line-height: 22px;
 }
 
+label {
+    font-size: 16px;
+}
+
+input {
+    font-size: 16px;
+    font-weight: 400;
+    color: $text-main;
+    cursor: pointer;
+}
+
 .border-rounded {
-	border: 1px solid $gray-100;
+	border: 1px solid $gray-stroke;
 	border-radius: 1000px;
 }
 

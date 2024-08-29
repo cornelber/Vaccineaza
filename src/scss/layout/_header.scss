@@ -91,7 +91,7 @@
 
                 &:hover,
                 &:has(input:focus) {
-                    border-color: $gray-200;
+                    border-color: $gray-stroke-hover;
                 }
         
                 .header__search-button {
@@ -186,12 +186,12 @@
             align-items: center;
             padding: 24px 0;
             gap: 24px;
-            border-top: 1px solid $gray-100;
-            border-bottom: 1px solid $gray-100;
+            border-top: 1px solid $gray-stroke;
+            border-bottom: 1px solid $gray-stroke;
             .nav-item__link {
                 .icon-home {
                     font-size: 24px;
-                    color: $gray-400;
+                    color: $text-main;
                     transition: color 0.2s ease-in-out;
                 }
 
@@ -215,7 +215,7 @@
 
                 &:hover,
                 &:has(input:focus) {
-                    border-color: $gray-200;
+                    border-color: $gray-stroke-hover;
                 }
         
                 .header__search-button {
@@ -305,7 +305,7 @@
                 .submenu-list__item {
                     position: relative;
                     background-color: $white;
-                    color: $gray-400;
+                    color: $text-main;
                     font-size: 12px;
 
                     .submenu-item__link {
@@ -351,7 +351,7 @@
                 }
 
                 .separator {
-                    background: $gray-100;
+                    background: $gray-stroke;
                     height: 1px;
                 }
             }
@@ -376,7 +376,7 @@
                     flex-direction: column;
                     align-items: start;
                     border: unset;
-                    border-bottom: 1px solid $gray-100;
+                    border-bottom: 1px solid $gray-stroke;
                     transition: color 0.2s ease-in-out;
 
                     &:first-child {
@@ -426,7 +426,7 @@
 
                         .submenu-item__link {
                             padding: 12px 24px;
-                            color: $gray-400;
+                            color: $text-main;
     
                             img {
                                 display: none;

@@ -907,169 +907,179 @@
     <main>
         <div class="main__container">
             <section class="hero">
-    <div class="hero-content__left">
-        <div class="card-calendar">
-            <div class="card-calendar__content">
-                <h3 class="title">Accesează calendarul interactiv al vaccinărilor!</h3>
-                <p class="description">Calendarul interactiv al vaccinărilor vă permite să introduceți data, luna și anul nașterii pentru a vedea perioadele de imunizare. Puteți descărca și printa acest calendar.</p>
-                
-                <form action="#" class="form">
-                    <div class="form-container">
-                        <div class="form-group">
-                            <label for="day">Data nașterii:</label>
-                            <input type="text" id="day" name="day" placeholder="DD">
-                        </div>
-                        <div class="form-group">
-                            <label for="year">Anul nașterii:</label>
-                            <input type="text" id="year" name="year" placeholder="YYYY">
-                        </div>
-                        <div class="form-group">
-                            <label for="month">Luna nașterii:</label>
-                            <input type="text" id="month" name="month" placeholder="MM">
-                        </div>
-                        <div class="form-group">
-                            <label for="gender">Gen:</label>
-                            <div class="gender-options">
-                                <label><input type="radio" name="gender" value="F"> F</label>
-                                <label><input type="radio" name="gender" value="M"> B</label>
-                            </div>
-                        </div>
-                    </div>
-                    <button id="calendar-modal-btn" class="button button__blue button__submit">
-                        Vizualizează calendarul
-                    </button>
-                </form>
-                
-            </div>
-            <div class="card-calendar__image">
-                <img src="img/hero-calendar.svg" alt="Illustration Calendar" width="340" height="280">
-            </div>
-        </div>
-    </div>
-    <div class="hero-content__right">
-        <div class="card-info card-ansp">
-            <p>Linia verde ANSP: <strong>080 012 300</strong></p>
-        </div>
+    <!-- Calendar Card-Block Left -->
+    <div class="hero__content hero__content-left">
+        <div class="calendar__card">
+    <div class="calendar__card-content">
+        <h3 class="title">Accesează calendarul interactiv al vaccinărilor!</h3>
+        <p class="subtitle">Calendarul interactiv al vaccinărilor vă permite să introduceți data, luna și anul nașterii pentru a vedea perioadele de imunizare. Puteți descărca și printa acest calendar.</p>
 
-        <div class="card-info card-app">
-            <img src="img/med-safety-app.svg" alt="Aplicația Med Safety">
-            <p>Aplicația Med Safety</p>
-        </div>
-        <div class="card-info card-benefits">
-            <div class="swiper slider-benefits">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="swiper-slide__body">
-                        <h4 class="title">Beneficiile vaccinării</h4>
-                        <img src="img/benefits-img.svg" alt="Beneficiile vaccinării" width="320" height="150">
-                        <p class="description">Epidemiile sunt un risc enorm pentru comunitate și sănătatea publică.</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="swiper-slide__body">
-                        <h3 class="title">Beneficiile vaccinării</h3>
-                        <img src="img/benefits-img.svg" alt="Beneficiile vaccinării" width="320" height="150">
-                        <p class="description">Epidemiile sunt un risc enorm pentru comunitate și sănătatea publică.</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="swiper-slide__body">
-                        <h3 class="title">Beneficiile vaccinării</h3>
-                        <img src="img/benefits-img.svg" alt="Beneficiile vaccinării" width="320" height="150">
-                        <p class="description">Epidemiile sunt un risc enorm pentru comunitate și sănătatea publică.</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="swiper-slide__body">
-                        <h3 class="title">Beneficiile vaccinării</h3>
-                        <img src="img/benefits-img.svg" alt="Beneficiile vaccinării" width="320" height="150">
-                        <p class="description">Epidemiile sunt un risc enorm pentru comunitate și sănătatea publică.</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="swiper-slide__body">
-                        <h3 class="title">Beneficiile vaccinării</h3>
-                        <img src="img/benefits-img.svg" alt="Beneficiile vaccinării" width="320" height="150">
-                        <p class="description">Epidemiile sunt un risc enorm pentru comunitate și sănătatea publică.</p>
-                    </div>
-                  </div>
-
+        <form action="#" class="form">
+            <div class="form-wrapper">
+                <div class="form-group">
+                    <label for="day" class="form-group__label">Data nașterii:</label>
+                    <input type="text" id="day" name="day" class="form-group__input" placeholder="DD">
                 </div>
-                <div class="swiper-pagination"></div>
-              </div>
+                <div class="form-group">
+                    <label for="year" class="form-group__label">Anul nașterii:</label>
+                    <input type="text" id="year" name="year" class="form-group__input" placeholder="YYYY">
+                </div>
+                <div class="form-group">
+                    <label for="month" class="form-group__label">Luna nașterii:</label>
+                    <input type="text" id="month" name="month" class="form-group__input" placeholder="MM">
+                </div>
+                <div class="form-group">
+                    <label for="gender" class="form-group__label">Gen:</label>
+                    <div class="form-group__options">
+                        <label><input type="radio" name="gender" value="F">F</label>
+                        <label><input type="radio" name="gender" value="M">B</label>
+                    </div>
+                </div>
+            </div>
+            <button id="calendar-modal-btn" class="button button__blue button__submit">
+                Vizualizează calendarul
+            </button>
+        </form>
+    </div>
+    <div class="calendar__card-media">
+        <img class="calendar__card-media-img" src="img/hero-calendar.svg" alt="Illustration Calendar" width="340" height="280">
+    </div>
+</div>
+    </div>
+    <!-- Info Cards and Slider Block Right -->
+    <div class="hero__content hero__content-right">
+        <a class="ansp__card card__link" href="#">
+    <p class="ansp__card-text">
+        Linia verde ANSP: 
+        <strong>080 012 300</strong>
+    </p>
+</a>
+        <a class="medapp__card card__ink" href="#">
+    <img class="medapp__card-img" src="img/med-safety-app.svg" alt="Aplicația Med Safety" width="60" height="60">
+    <p class="medapp__card-text">Aplicația Med Safety</p>
+</a>
+        <div class="benefits">
+    <div class="slider-benefits swiper hero__slider">
+        <div class="slider-benefits__wrapper swiper-wrapper">
+    
+            <div class="slider-benefits__slide swiper-slide">
+                <div class="slider-benefits__body">
+                    <h4 class="slider-benefits__title">Beneficiile vaccinării</h4>
+                    <img class="slider-benefits__img" src="img/benefits-img.svg" alt="Beneficiile vaccinării" width="320" height="150">
+                    <p class="slider-benefits__description">Epidemiile sunt un risc enorm pentru comunitate și sănătatea publică.</p>
+                </div>
+            </div>
+    
+            <div class="slider-benefits__slide swiper-slide">
+                <div class="slider-benefits__body">
+                    <h4 class="slider-benefits__title">Beneficiile vaccinării</h4>
+                    <img class="slider-benefits__img" src="img/benefits-img.svg" alt="Beneficiile vaccinării" width="320" height="150">
+                    <p class="slider-benefits__description">Epidemiile sunt un risc enorm pentru comunitate și sănătatea publică.</p>
+                </div>
+            </div>
+    
+            <div class="slider-benefits__slide swiper-slide">
+                <div class="slider-benefits__body">
+                    <h4 class="slider-benefits__title">Beneficiile vaccinării</h4>
+                    <img class="slider-benefits__img" src="img/benefits-img.svg" alt="Beneficiile vaccinării" width="320" height="150">
+                    <p class="slider-benefits__description">Epidemiile sunt un risc enorm pentru comunitate și sănătatea publică.</p>
+                </div>
+            </div>
+    
+            <div class="slider-benefits__slide swiper-slide">
+                <div class="slider-benefits__body">
+                    <h4 class="slider-benefits__title">Beneficiile vaccinării</h4>
+                    <img class="slider-benefits__img" src="img/benefits-img.svg" alt="Beneficiile vaccinării" width="320" height="150">
+                    <p class="slider-benefits__description">Epidemiile sunt un risc enorm pentru comunitate și sănătatea publică.</p>
+                </div>
+            </div>
+    
+            <div class="slider-benefits__slide swiper-slide">
+                <div class="slider-benefits__body">
+                    <h4 class="slider-benefits__title">Beneficiile vaccinării</h4>
+                    <img class="slider-benefits__img" src="img/benefits-img.svg" alt="Beneficiile vaccinării" width="320" height="150">
+                    <p class="slider-benefits__description">Epidemiile sunt un risc enorm pentru comunitate și sănătatea publică.</p>
+                </div>
+            </div>
+    
         </div>
+        <div class="slider-benefits__pagination swiper-pagination"></div>
+    </div>
+</div>
     </div>
 </section>
             <section class="news">
-    <div class="banners">
-        <a href="#">
-            <img src="img/banners/vaccinare.svg" alt="Vaccinare.gov.md" width="360" height="108">
+    <!-- News Banners -->
+    <div class="news__banners">
+        <a class="news__banner-link" href="#">
+            <img class="news__banner-img" src="img/banners/vaccinare.svg" alt="Vaccinare.gov.md" width="360" height="108">
         </a>
-        <a href="#">
-            <img src="img/banners/covid.svg" alt="Covidinfo.gov.md" width="360" height="108">
+        <a class="news__banner-link" href="#">
+            <img class="news__banner-img" src="img/banners/covid.svg" alt="Covidinfo.gov.md" width="360" height="108">
         </a>
     </div>
-    <div class="news-cards">
-        <div class="cards-wrapper">
-            <div class="col">
-                <!-- todo: content personalizat pentru fiecare -->
-                <a class="news-card" href="#">
-    <div class="news-card__body">
-        <div class="card-image">
-            <img src="img/poliomielita.png" alt="Poliomielita" width="232" height="180">
+
+    <!-- News Cards -->
+    <div class="news__cards">
+        <div class="news__cards-wrapper">
+            <div class="news__cards-col">
+                <a class="news__card news__card-link" href="#">
+    <div class="news__card-body">
+        <div class="news__card-media">
+            <img class="news__card-media-img" src="img/poliomielita.png" alt="Poliomielita" width="232" height="180">
         </div>
-        <div class="card-content">
-            <h5 class="card-content__title">Poliomielita</h5>
-            <p class="card-content__copy">Poliomielita sau paralizia infantila este o boala virala, infectioasa, produsa de virusul poliomielitic (virus din clasa enterovirusurilor) care poate determina paralizie, dificultati de respiratie si chiar deces. Pare sa existe din timpuri stravechi, fiind mentionat chiar si in picturile si sculpturile egiptene antice.</p>
+        <div class="news__card-content">
+            <h5 class="news__card-content__title">Poliomielita</h5>
+            <p class="news__card-content__copy">Poliomielita sau paralizia infantila este o boala virala, infectioasa, produsa de virusul poliomielitic (virus din clasa enterovirusurilor) care poate determina paralizie, dificultati de respiratie si chiar deces. Pare sa existe din timpuri stravechi, fiind mentionat chiar si in picturile si sculpturile egiptene antice.</p>
         </div>
     </div>
 </a>
 
             </div>
-            <div class="col">
-                <a class="news-card" href="#">
-    <div class="news-card__body">
-        <div class="card-image">
-            <img src="img/gripa.png" alt="Gripa" width="232" height="180">
+            <div class="news__cards-col">
+                <a class="news__card news__card-link" href="#">
+    <div class="news__card-body">
+        <div class="news__card-media">
+            <img class="news__card-media-img" src="img/gripa.png" alt="Gripa" width="232" height="180">
         </div>
-        <div class="card-content">
-            <h5 class="card-content__title">Gripa - boală prevenibilă prin vaccinare!</h5>
-            <p class="card-content__copy">Gripa, sau influenza, este o boală respiratorie contagioasă cauzată de anumiți viruși care ne invadează și ne infectează nasul, gâtul și chiar plămâni...</p>
-        </div>
-    </div>
-</a>
-
-            </div>
-            <div class="col">
-                <a class="news-card" href="#">
-    <div class="news-card__body">
-        <div class="card-image">
-            <img src="img/omicron.png" alt="Omicron" width="232" height="180">
-        </div>
-        <div class="card-content">
-            <h5 class="card-content__title">Noua variantă Omicron EG.5.1 al virusului COVID-19 “Eris”</h5>
-            <p class="card-content__copy">De la prima apariție a noului coronavirus, numit COVID-19 la nivel global, acest virus și-a schimbat forma și a devenit, treptat, diferit de varianta...</p>
+        <div class="news__card-content">
+            <h5 class="news__card-content__title">Gripa - boală prevenibilă prin vaccinare!</h5>
+            <p class="news__card-content__copy">Gripa, sau influenza, este o boală respiratorie contagioasă cauzată de anumiți viruși care ne invadează și ne infectează nasul, gâtul și chiar plămâni...</p>
         </div>
     </div>
 </a>
 
             </div>
-            <div class="col">
-                <a class="news-card" href="#">
-    <div class="news-card__body">
-        <div class="card-image">
-            <img src="img/hpv.png" alt="HPV" width="232" height="180">
+            <div class="news__cards-col">
+                <a class="news__card news__card-link" href="#">
+    <div class="news__card-body">
+        <div class="news__card-media">
+            <img class="news__card-media-img" src="img/omicron.png" alt="Omicron" width="232" height="180">
         </div>
-        <div class="card-content">
-            <h5 class="card-content__title">Dovezile eficacității vaccinului contra HPV la băieți</h5>
-            <p class="card-content__copy">Virusul papiloma uman (HPV) este un virus ADN dublu catenar care reprezintă cauza cea mai frecventă de infecție cu transmitere sexuală la ambele sexe. Deși inițial se credea că afectează în primul rând femeile, incidența infecției genitale cu HPV în rândul bărbaților este similară cu cea a femeilor.</p>
+        <div class="news__card-content">
+            <h5 class="news__card-content__title">Noua variantă Omicron EG.5.1 al virusului COVID-19 “Eris”</h5>
+            <p class="news__card-content__copy">De la prima apariție a noului coronavirus, numit COVID-19 la nivel global, acest virus și-a schimbat forma și a devenit, treptat, diferit de varianta...</p>
+        </div>
+    </div>
+</a>
+
+            </div>
+            <div class="news__cards-col">
+                <a class="news__card news__card-link" href="#">
+    <div class="news__card-body">
+        <div class="news__card-media">
+            <img class="news__card-media-img" src="img/hpv.png" alt="HPV" width="232" height="180">
+        </div>
+        <div class="news__card-content">
+            <h5 class="news__card-content__title">Dovezile eficacității vaccinului contra HPV la băieți</h5>
+            <p class="news__card-content__copy">Virusul papiloma uman (HPV) este un virus ADN dublu catenar care reprezintă cauza cea mai frecventă de infecție cu transmitere sexuală la ambele sexe. Deși inițial se credea că afectează în primul rând femeile, incidența infecției genitale cu HPV în rândul bărbaților este similară cu cea a femeilor.</p>
         </div>
     </div>
 </a>
 
             </div>
         </div>
-        <a class="link link__secondary" href="#">Vezi toate noutățile</a>
+        <a class="link link__secondary news__cards-link" href="#">Vezi toate noutățile</a>
     </div>
 </section>
             
@@ -1077,22 +1087,21 @@
     </main>
     <footer class="footer">
     <div class="footer__container">
-        <div class="footer-wrapper">
-            <div class="footer__col">
-                <div class="content-wrapper">
-                    <h3>Aveți întrebări suplimentare?</h3>
-                    <p>Scrieți-ne un mesaj și noi vă ajutăm!</p>
+        <div class="footer__wrapper">
+            <div class="footer-col footer-col__contact">
+                <div class="footer-content">
+                    <h3 class="footer-col__contact-title">Aveți întrebări suplimentare?</h3>
+                    <p class="footer-col__contact-subtitle">Scrieți-ne un mesaj și noi vă ajutăm!</p>
                 </div>
                 <button id="contact-modal-btn" class="button button__blue">Contactați-ne</button>
             </div>
-            <div class="footer__col">
-                <img src="img/logos/ue.svg" alt="Uniunea Europeana" width="170" height="150">
-                <h4>Sursă oficială de informare despre procesul de vaccinare din Republica Moldova</h4>
+            <div class="footer-col footer-col__info">
+                <img class="footer-col__info-img" src="img/logos/ue.svg" alt="Uniunea Europeana">
+                <h4 class="footer-col__info-title">Sursă oficială de informare despre procesul de vaccinare din Republica Moldova</h4>
             </div>
         </div>
     </div>
 </footer>
-
 
     <!--Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

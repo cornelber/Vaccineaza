@@ -1,7 +1,7 @@
 .accordion-item {
     width: 100%;
     border-radius: 8px;
-    border: 1px solid $gray-100;
+    border: 1px solid $gray-stroke;
     transition: border-color 0.2s ease-in-out;
     
     // Styling for accordion header info
@@ -34,7 +34,7 @@
         .separator {
             display: block;
             height: 1px;
-            background-color: $gray-100;
+            background-color: $gray-stroke;
             margin: 0 16px;
         }   
 

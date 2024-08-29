@@ -1,0 +1,87 @@
+// Hero Section
+.hero {
+    @include grid(12, 24px);
+    margin: 24px 0;
+
+    &__content {
+        &-left {
+            grid-column: span 8;
+            
+            @media (max-width: $tablet) {
+                grid-column: span 12;
+            }
+        }
+
+        &-right {
+            grid-column: span 4;
+            @include flex(column, start, stretch);
+            gap: 24px;
+
+            @media (max-width: $tablet) {
+                grid-column: span 12;
+                @include grid(12, 24px);
+            }
+        }
+    }
+
+}
+
+// News Section
+.news {
+    @include flex(column, center, center);
+    gap: 24px;
+
+    &__banners {
+        @include flex(row, center, center);
+        gap: 24px;
+
+        .news__banner {
+            &-link {
+                display: block;
+                text-decoration: none;
+            }
+    
+            &-img {
+                max-width: 360px;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+        @media (max-width: $mobileSmall) {
+            flex-direction: column;
+        }
+    }
+
+    &__cards {
+        @include flex(column, center, center);
+
+        &-wrapper {
+            @include grid(12, 24px);
+            margin-bottom: 32px;
+
+            @media (max-width: $tablet) {
+                @include adaptiv-value("gap", 16, 10, 1);
+            }
+        }
+
+        &-col {
+            display: flex;
+            grid-column: span 3;
+
+            @media (max-width: $mobileMedium) {
+                grid-column: span 6;
+            }
+        }
+
+        &-link {
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    
+    @media (max-width: $mobileMedium) {
+        margin-bottom: 8px;
+    }
+}
