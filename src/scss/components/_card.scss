@@ -30,7 +30,7 @@
             }
 
             &-group {
-                @include flex(column, start, start);
+                @include flex(column, flex-start, flex-start);
                 gap: 4px;
                 width: 100%;
                 padding: 12px;
@@ -233,7 +233,7 @@
         }
     
         .news__card-content {
-            @include flex(column, start, start);
+            @include flex(column, flex-start, flex-start);
             gap: 6px;
     
             &__title {

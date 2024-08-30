@@ -14,7 +14,7 @@
 
         &-right {
             grid-column: span 4;
-            @include flex(column, start, stretch);
+            @include flex(column, flex-start, stretch);
             gap: 24px;
 
             @media (max-width: $tablet) {
