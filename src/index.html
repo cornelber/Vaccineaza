@@ -2,9 +2,6 @@
 <html lang="en">
 @@include('./components/head.html', {'title': 'Acasă'})
 <body class="no-footer-bg">
-    @@include('./components/modals/calendar-modal.html')
-    @@include('./components/modals/contact-modal.html')
-
     <div class="background-illustrations">
         <div class="background-illustrations__wrapper">
             <div class="left-illustrations">
@@ -40,6 +37,9 @@
             @@include('./components/sections/news-section.html')
         </div>
     </main>
+
+    @@include('./components/modals/calendar-modal.html')
+    @@include('./components/modals/contact-modal.html')
     @@include('./components/footer.html')
 
     <!--Swiper JS -->
