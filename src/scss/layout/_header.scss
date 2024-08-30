@@ -30,11 +30,14 @@
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 16px;
-        align-items: center;
-        justify-content: space-between;
+        // align-self: center;
+        // justify-content: space-between;
         padding: 10px 0;
         background: $white;
         z-index: 5;
+        > *  {
+            align-self: center;
+        }
         
         .header__left {
             grid-column: span 3;
@@ -77,7 +80,7 @@
             grid-column: span 3;
             display: flex;
             align-items: center;
-            justify-content: end;
+            justify-content: flex-end;
             gap: 8px;
 
             .header__search {
@@ -136,7 +139,7 @@
     
             .header__center {
                 grid-column: span 8;
-                justify-content: start;
+                justify-content: flex-start;
                 padding: 14px 10px 14px 0;
                 text-align: left;
                 gap: 20px;
@@ -164,7 +167,7 @@
     
             .header__center {
                 grid-column: span 11;
-                justify-content: start;
+                justify-content: flex-start;
                 text-align: left;
                 gap: 20px;
             }
@@ -362,7 +365,7 @@
             position: absolute;
             top: 0;
             width: 100%;
-            height: 100vh;
+            height: 100dvh;
             background-color: $white;
             overflow-y: scroll;
             padding-bottom: 100px;
@@ -374,7 +377,7 @@
                 .nav-list__item {
                     display: flex;
                     flex-direction: column;
-                    align-items: start;
+                    align-items: flex-start;
                     border: unset;
                     border-bottom: 1px solid $gray-stroke;
                     transition: color 0.2s ease-in-out;
@@ -387,7 +390,7 @@
                         position: relative;
                         width: 100%;
                         display: flex;
-                        justify-content: start;
+                        justify-content: flex-start;
                         color: $main-blue;
                         transition: color 0.2s ease-in-out;
 
