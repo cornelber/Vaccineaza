@@ -1,0 +1,59 @@
+.no-footer-bg .footer {
+    background-color: transparent;
+}
+
+.footer {
+    padding: 48px 0;
+    background-color: $white;
+
+    &__wrapper {
+        @include grid(12, 24px);
+
+        @media (max-width: $mobileMedium) {
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+
+    &-col {
+        @include flex(row, center, center);
+        @include border-rounded-shadow($gray-stroke, 0, $yellow-shadow);
+        padding: 24px;
+        grid-column: span 6;
+        background-color: $white;
+
+        &__contact {
+            flex-direction: column;
+            text-align: center;
+
+            .footer-content {
+                margin-bottom: 12px;
+            }
+            
+            &-title {
+                margin-bottom: 4px;
+            }
+
+            &-subtitle {
+                color: $text-secondary;
+            }
+        }
+
+        &__info {
+
+            &-img {
+                max-width: 170px;
+                width: 100%;
+                height: auto;
+                margin-bottom: 12px;
+            }
+        }
+
+        @media (max-width: $mobileMedium) {
+            grid-column: span 12;
+        }
+    }
+
+    @media (max-width: $mobileMedium) {
+        padding: 24px 0;
+    }
+}

@@ -1,0 +1,253 @@
+
+// Calendar Card
+.calendar__card {
+    @include grid(12, 24px);
+    padding: 32px;
+    height: 100%;    
+    background-color: $main-aliceblue;
+    @include border-rounded-shadow(unset, 0, $blue-shadow);
+
+    // Content Block
+    &-content {
+        grid-column: span 6;
+
+        .title {
+            text-align: center;
+            padding-bottom: 6px;
+        }
+
+        .subtitle {
+            text-align: justify;
+            padding-bottom: 24px;
+            color: $text-secondary;
+        }
+
+        .form {
+
+            &-wrapper {
+                @include grid(2, 10px);
+                margin-bottom: 24px;
+            }
+
+            &-group {
+                @include flex(column, flex-start, flex-start);
+                gap: 4px;
+                width: 100%;
+                padding: 12px;
+                border-radius: 8px;
+                border: 1px solid lighten($main-blue-stroke, 40%);
+                background-color: $white;
+
+                &__label {
+                    color: $text-secondary;
+                    padding-bottom: 8px;
+                }
+
+                &__input {
+                    font-weight: 600;
+                    width: 100%;
+                    color: $main-blue;
+                    transition: all 0.4s ease-in-out;
+
+                    &::placeholder {
+                        color: $text-main;
+                        opacity: 1;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        &::placeholder {
+                            color: $main-blue;
+                        }
+                    }
+                }
+
+                &__options {
+                    @include flex(row, center, center);
+                    gap: 12px;
+
+                    label {
+                        @include flex(row, center, center); 
+                        gap: 6px;
+                        color: $text-main;
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+
+                    input[type="radio"] {
+                        position: relative;
+                        width: 22px;
+                        height: 22px;
+                        appearance: none;
+                        border: 2px solid $text-main; 
+                        border-radius: 50%;
+                
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%; 
+                            left: 50%;
+                            width: 12px;
+                            height: 12px;
+                            transform: translate(-50%, -50%);
+                            border-radius: 50%;
+                            background-color: transparent;
+                            transition: background-color 0.3s ease;
+                        }
+                
+                        &:checked::before {
+                            background-color: $text-main;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+    // Media Block
+    &-media {
+        @include flex(row, center, center);
+        grid-column: span 6;
+
+        &-img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-width: $mobileMedium) {
+        grid-template-columns: auto auto;
+
+        &-content {
+            grid-column: span 12;
+        }
+
+        &-media {
+            grid-column: span 12;
+            grid-row: 1;
+        }
+    }
+
+    @media (max-width: $mobileSmall) {
+        padding: 16px;
+
+        &-content {
+            .form {
+                &-wrapper {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+        }
+    }
+}
+
+// ANSP Card & Med Safety Card
+.ansp__card,
+.medapp__card {
+    @include flex(row, center, center);
+    max-height: 70px;
+    height: 100%;
+    width: 100%;
+    padding: 16px;
+    gap: 10px;
+    color: $text-main;
+    text-align: center;
+
+    &-text {
+        font-size: 16px;
+    }
+
+    @media (max-width: $mobileMedium) {
+        height: 70px;
+    }
+
+    
+}
+
+.ansp__card {
+    background-color: $green-bg;
+    @include border-rounded-shadow($green-bg, 0px, $green-shadow);
+
+    @media (max-width: $tablet) {
+        grid-column: 1 / span 6;
+        grid-row: 1;
+    }
+
+    @media (max-width: $mobileMedium) {
+        grid-column: span 12;
+        grid-row: 1;
+    }
+}
+
+.medapp__card {
+    background-color: $yellow-bg;
+    @include border-rounded-shadow($yellow-bg, 0px, $yellow-shadow);
+
+    &-text {
+        text-decoration: underline;
+    }
+
+    @media (max-width: $tablet) {
+        grid-column: 7 / span 6;
+        grid-row: 1;
+    }
+
+    @media (max-width: $mobileMedium) {
+        grid-column: span 12;
+        grid-row: 2;
+    }
+}
+
+// News Card
+.news__card {
+    display: flex;
+
+    &-body {
+        @include flex(column, stretch, center);
+        padding: 16px;
+        gap: 16px;
+        background-color: $white;
+        @include border-rounded-shadow($gray-stroke-secondary, 0, $gray-shadow);
+        transition: all 0.4s ease-in-out;
+
+        &:hover,
+        &:focus {
+            @include border-rounded-shadow($main-blue, 0, $blue-shadow);
+
+            .news__card-content__title {
+                color: $main-blue;
+            }
+        }
+
+        .news__card-media {
+            width: 100%;
+        
+            &-img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 4px;
+            }
+        }
+    
+        .news__card-content {
+            @include flex(column, flex-start, flex-start);
+            gap: 6px;
+    
+            &__title {
+                @include text-truncate(2);
+                color: $text-main;
+                transition: all 0.4s ease-in-out;
+            }
+    
+            &__copy {
+                @include text-truncate(2);
+                @include adaptiv-value("font-size", 14, 12, 1);
+                @include adaptiv-value("line-height", 22, 18, 1);
+                color: $text-secondary;
+            }
+        }
+    }
+}

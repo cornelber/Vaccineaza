@@ -6,116 +6,64 @@ const rightIllustrations = document.querySelectorAll(".right-illustration");
 const main = document.querySelector("main");
 const footer = document.querySelector("footer");
 
+// Timeline for initial animations
+const tl = gsap.timeline({ defaults: { duration: 0.8, ease: "power2.out" } });
 
+// Animation for main content
+tl.fromTo(main, { y: 100, opacity: 0 }, { y: 0, opacity: 1 });
 
-const tl = gsap.timeline(); // pentru gestionarea animatiilor
-// Animația pentru main
-tl.fromTo(
-  main,
-  { y: 100, opacity: 0 },
-  {
-    y: 0,
-    opacity: 1,
-    duration: 0.8,
-    ease: "power2.out",
-  }
-);
-// Animația pentru footer
-tl.fromTo(
-  footer,
-  { y: 100, opacity: 0 },
-  {
-    y: 0,
-    opacity: 1,
-    duration: 0.8,
-    ease: "power2.out",
-  },
-  "-=0.5"
-);
+// Animation for footer with slight overlap
+tl.fromTo(footer, { y: 100, opacity: 0 }, { y: 0, opacity: 1 }, "-=0.2");
 
-// // Animația inițială pentru SVG-uri
-// gsap.fromTo(leftIllustrations,
-//     { x: -100, opacity: 0, y: 100, scale: 0.8 },
-//     {
-//         x: 0,
-//         opacity: 1,
-//         y: 0,
-//         scale: 1,
-//         duration: 1,
-//         stagger: 0.2,
-//         ease: "power2.out" // Efect de ieșire mai lină
-//     }
-// );
+// Function to animate illustrations
+function animateIllustrations(elements, xStart, yBouncing, scrollEase, scrollXStart, scrollYEffect) {
+  elements.forEach((element) => {
+    // Ensure initial state is correctly set by applying GSAP set
+    gsap.set(element, {
+      x: scrollXStart,
+      y: 50, 
+    });
 
-// gsap.fromTo(rightIllustrations,
-//     { x: 100, opacity: 0, y: 100, scale: 0.8 },
-//     {
-//         x: 0,
-//         opacity: 1,
-//         y: 0,
-//         scale: 1,
-//         duration: 1,
-//         stagger: 0.2,
-//         ease: "power2.out" // Efect de ieșire mai lină
-//     }
-// );
+    // Initial animation from slightly offscreen bottom to top on page load
+    gsap.fromTo(
+      element,
+      { y: 50 }, 
+      { 
+        y: 0, 
+        duration: 1.2, 
+        ease: "power2.out" 
+      }
+    );
 
-// Animația pentru mișcare la scroll
-leftIllustrations.forEach((illustration) => {
-  gsap.fromTo(
-    illustration,
-    { x: -100, opacity: 0 },
-    {
-      x: 0,
-      opacity: 1,
-      scrollTrigger: {
-        trigger: illustration,
-        start: "top 80%",
-        end: "top 20%",
-        scrub: true,
-      },
-    }
-  );
-});
+    // Scroll-triggered animation with parallax effect
+    gsap.fromTo(
+      element,
+      { x: scrollXStart },
+      {
+        x: 0,  
+        y: scrollYEffect, 
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: element,
+          start: "top 80%",  
+          end: "bottom 20%",
+          scrub: scrollEase,
+        },
+      }
+    );
 
-rightIllustrations.forEach((illustration) => {
-  gsap.fromTo(
-    illustration,
-    { x: 100, opacity: 0 },
-    {
-      x: 0,
-      opacity: 1,
-      scrollTrigger: {
-        trigger: illustration,
-        start: "top 80%",
-        end: "top 20%",
-        scrub: true,
-      },
-    }
-  );
-});
-
-// Animatie "bouncing" (sus-jos) - static
-function addHoverAnimation() {
-  gsap.to(leftIllustrations, {
-    y: -15,
-    repeat: -1,
-    yoyo: true,
-    ease: "power1.inOut",
-    duration: 2,
-    stagger: 0.2,
-    paused: false,
-  });
-
-  gsap.to(rightIllustrations, {
-    y: 10,
-    repeat: -1,
-    yoyo: true,
-    ease: "power1.inOut",
-    duration: 2,
-    stagger: 0.2,
-    paused: false,
+    // Subtle bouncing animation
+    gsap.to(element, {
+      y: yBouncing,
+      repeat: -1,
+      yoyo: true,
+      ease: "power1.inOut",
+      duration: 2,
+      stagger: 0.2,
+    });
   });
 }
 
-addHoverAnimation();
+animateIllustrations(leftIllustrations, -100, -15, true, -50, -20); 
+animateIllustrations(rightIllustrations, 100, 10, true, 50, 20);

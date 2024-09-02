@@ -1,0 +1,53 @@
+// Benefits Hero Slider
+.benefits {
+    background-color: $main-aliceblue;
+    @include border-rounded-shadow(unset, 0, $blue-shadow);
+    padding: 16px;
+
+    @media (max-width: $tablet) {
+        grid-column: 1 / span 12;
+        grid-row: 2 / span 2;
+    }
+
+    @media (max-width: $mobileMedium) {
+        grid-column: span 12;
+        grid-row: 3
+    }
+
+    .slider-benefits {
+        padding-bottom: 36px;
+        &__body {
+            text-align: center;
+        }
+
+        &__title {
+            font-size: 20px; 
+            padding-bottom: 16px;
+        }
+        
+        &__img {
+            display: block;
+            margin: 0 auto 16px;
+            width: 100%;
+            height: 100%;
+        }
+
+        &__description {
+            font-size: 16px;
+        }
+
+        &__pagination {
+            bottom: 9px;
+            .swiper-pagination-bullet {
+                width: 11px;
+                height: 11px;
+                border: 1px solid $text-main;
+                background-color: transparent;
+
+                &-active {
+                    border: 1px solid $main-blue;
+                }
+            }
+        }
+    }
+}
