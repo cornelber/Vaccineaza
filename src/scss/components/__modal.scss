@@ -16,8 +16,8 @@
         flex-direction: column;
         position: relative;
         background-color: $white;
-        overflow: hidden;
-        width: 90%;
+        overflow: auto;
+        max-height: 90vh;
 
         &__header {
             position: relative;
