@@ -1165,6 +1165,19 @@ input {
   border-color: #007AFF;
   color: #FFFFFF;
 }
+.button__circle-outline {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: 1px solid #ECECEC;
+  color: #262626;
+}
+.button__circle-outline:hover, .button__circle-outline.active {
+  color: #007AFF;
+  border-color: #007AFF;
+  background-color: #F2F8FF;
+}
 
 .link {
   text-transform: uppercase;
@@ -2266,6 +2279,13 @@ input {
 .news__cards-link {
   text-align: center;
   margin: 0 auto;
+}
+.news__cards-pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 48px;
 }
 @media (max-width: 39.99875rem) {
   .news {
