@@ -345,9 +345,10 @@
 }
 
 // Image Card
-.photos-card {
+.photos-card,
+.infographs-card {
     position: relative;
-    display: block;
+    display: flex;
 
     img {
         width: 100%;
