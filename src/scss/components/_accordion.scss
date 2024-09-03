@@ -4,6 +4,22 @@
     border: 1px solid $gray-stroke;
     transition: border-color 0.2s ease-in-out;
     
+    &.faq-accordion-item {
+        background-color: $white;
+        
+        p {
+            color: $text-secondary;
+        }
+
+        &[data-expanded="true"] {
+            border-color: $gray-stroke;
+        }
+
+        &:hover {
+            border-color: $gray-stroke-hover;
+        }
+    }
+
     // Styling for accordion header info
     .accordion-header {
         display: flex;
