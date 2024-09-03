@@ -3,8 +3,8 @@ import './modules/animations.js'
 import * as flsFunctions from './modules/functions.js'
 import './modules/modal.js'
 
-flsFunctions.sliders()
 flsFunctions.isWebp()
+flsFunctions.sliders()
 
 const header = document.querySelector('.header')
 const burger = document.querySelector('.burger')
@@ -16,7 +16,6 @@ if (burger && menu) {
 if (header) {
     flsFunctions.fixedHeader(header)
 }
-
 if (document.querySelectorAll('[data-dropdown]')) {
     flsFunctions.dropdown()
 }
@@ -28,6 +27,7 @@ new Swiper(".slider-benefits", {
         dynamicBullets: true,
     },
 })
+
 new Swiper('.slider-photo__body', {
     observer: true,
     observeParents: true,
@@ -35,7 +35,7 @@ new Swiper('.slider-photo__body', {
     spaceBetween: 0,
     autoHeight: true,
     speed: 800,
-    touchRatio: 0,
+    touchRatio: 1,
     simulateTouch: true,
     preloadImages: false,
     lazy: true,
