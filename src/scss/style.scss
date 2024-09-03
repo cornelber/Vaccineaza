@@ -101,6 +101,7 @@ $mobileSmall: rem(479.98px);
 @import 'components/card.scss';
 @import 'components/accordion.scss';
 @import 'components/modal.scss';
+@import 'components/page-intro.scss';
 @import 'vendors/swiper.scss';
 
 // Importing Page Sections
@@ -108,3 +109,4 @@ $mobileSmall: rem(479.98px);
 
 // Importing Page Styles
 @import 'pages/home.scss';
+@import 'pages/infographs.scss';

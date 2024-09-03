@@ -23,4 +23,15 @@
     &__submit {
         max-width: 100%;
     }
+    &__outline {
+        background-color: $blue-bg-secondary;
+        border: 1px solid $main-blue-stroke;
+        padding: 12px 24px;
+        &:hover,
+        &.active {
+            background-color: $main-blue;
+            border-color: $main-blue;
+            color: $white;
+        }
+    }
 }

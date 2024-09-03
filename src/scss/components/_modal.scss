@@ -17,13 +17,9 @@
         position: relative;
         background-color: $white;
         overflow: auto;
-<<<<<<< HEAD:src/scss/components/__modal.scss
-        max-height: 90vh;
-=======
         max-width: 90dvw;
         max-height: 80dvh;
         margin: 16px;
->>>>>>> 4c88c867d3d163ebb7ddd1ccf72afeb8a7ca32af:src/scss/components/_modal.scss
 
         &__header {
             position: relative;

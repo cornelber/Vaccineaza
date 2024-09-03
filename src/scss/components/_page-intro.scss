@@ -1,0 +1,35 @@
+.page-intro {
+  @include adaptiv-value("padding-top", 40, 20, 1);
+  @include adaptiv-value("padding-bottom", 40, 20, 1);
+  background-color: #FFF;
+  i {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 24px;
+    border: 1px solid $main-blue-stroke;
+    border-radius: 8px;
+    background-color: $gray-bg;
+    padding: 12px;
+    margin-bottom: 12px;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      border-color: $main-blue;
+    }
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  &__tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    a {
+      width: fit-content;
+      @include adaptiv-value("font-size", 16, 14, 1);
+    }
+  }
+}
