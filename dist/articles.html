@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Articole</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240903142038" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20240903142038">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+  <body class="no-footer-bg">
+    <header class="header">
+  <div class="header__container">
+    <div class="header__upper">
+      <div class="header__left">
+        <ul class="gov-list">
+          <li class="gov-item">
+            <a href="/" class="gov-link">
+              <img class="gov-img" src="img/logos/gov.svg" alt="Government Logo" width="124" height="80"/>
+            </a>
+          </li>
+          <li class="gov-item">
+            <a href="/" class="gov-link">
+              <img class="gov-img" src="img/logos/ansp.svg" alt="ANSP Logo" width="121" height="60"/>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__center">
+        <a class="logo-link" href="/">
+          <h2 class="logo-title">VACCINAREA ÎN REPUBLICA MOLDOVA</h2>
+        </a>
+      </div>
+      <div class="header__right">
+        <form action="#" class="header__search search">
+          <input type="text" placeholder="Search..." aria-label="Search" />
+          <button type="button" class="header__search-button">
+            <i class="icon-magnifying-glass"></i>
+          </button>
+        </form>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-item__link" href="/">
+              <img class="social-icon" src="img/icons/instagram.svg" alt="Instagram"/>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-item__link" href="/">
+              <img class="social-icon" src="img/icons/facebook.svg" alt="Facebook" />
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-item__link" href="/">
+              <img class="social-icon" src="img/icons/youtube.svg" alt="YouTube" />
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-item__link" href="/">
+              <img class="social-icon" src="img/icons/gmail.svg" alt="Gmail" />
+            </a>
+          </li>
+        </ul>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="header-nav header__nav">
+    <div class="header-nav__container">
+      <div class="header-nav__controls">
+        <a class="nav-item__link" href="/">
+          <i class="icon-home"></i>
+        </a>
+        <form action="#" class="header__search search">
+          <input type="text" placeholder="Search..." aria-label="Search" />
+          <button type="button" class="header__search-button">
+            <i class="icon-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+
+      <ul class="header-nav__list">
+        <li class="nav-list__item active">
+          <a class="nav-item__link" href="/">
+            <i class="icon-home"></i>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-item__link" href="/">
+            <h6>Rolul vaccinurilor</h6>
+          </a>
+  
+           <div class="submenu">
+            <div class="submenu-wrapper">
+              <ul class="submenu-list">
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Rolul platformei</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/articles.html">
+                    <h6>Importanța și beneficiile vaccinării</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Componentele vaccinului</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Dezvoltarea vaccinului</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Siguranța vaccinurilor</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Cum vaccinurile fortifică imunitatea?</h6>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-item__link" href="/">
+            <h6>Calendarul Național de Vaccinare</h6>
+            <i class="icon-star"></i>
+          </a>
+  
+          <div class="submenu">
+            <div class="submenu-wrapper">
+              <ul class="submenu-list">
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>HepB - Vaccinul împotriva Hepatitei virale B</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>BCG - Vaccinul împotriva Tuberculozei</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>VPO - Vaccinul împotriva Poliomielitei</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>RV - Vaccinul împotriva Infecției rotavirale</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Hib - Vaccinul împotriva Infecției cu Hib</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>PC - Vaccinul împotriva Infecției pneumococice</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>DTP - Vaccinul împotriva Difteriei, Tetanosului, Pertussis</h6>
+                  </a>
+                </li>
+                <li class="separator"></li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>DT/Td - Vaccinul împotriva Difteriei, tetanosului</h6>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>ROR - Vaccinul împotriva Rujeolei, Oreionului, Rubeolei</h6>
+                  </a>
+                </li>
+                <li class="separator"></li>
+                <li class="submenu-list__item">
+                  <a class="submenu-item__link" href="/">
+                    <h6>Vaccinuri recomandate</h6>
+                    <i class="icon-chevron"></i>
+                  </a>
+  
+                  <div class="submenu submenu-level-2">
+                      <div class="submenu-wrapper">
+                          <ul class="submenu-list">
+                              <li class="submenu-list__item">
+                                  <a href="/" class="submenu-item__link">
+                                      <h6>Vaccinul împotriva COVID-19</h6>
+                                  </a>
+                              </li>
+                              <li class="submenu-list__item">
+                                  <a href="/" class="submenu-item__link">
+                                      <h6>Vaccinul împotriva Gripei sezoniere</h6>
+                                  </a>
+                              </li>
+                              <li class="submenu-list__item">
+                                  <a href="/" class="submenu-item__link">
+                                      <h6>Vaccinul împotriva Rabiei</h6>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-item__link" href="/">
+            <h6>Vaccinul împotriva HPV</h6>
+          </a>
+  
+          <div class="submenu">
+              <div class="submenu-wrapper">
+                <ul class="submenu-list">
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Cancerul de col uterin</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Ce reprezintă vaccinul împotriva HPV?</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Cum acționează vaccinul?</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Vaccinarea băieților împotriva virusului HPV</h6>
+                    </a>
+                  </li>
+                  <li class="separator"></li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Certificatul de siguranță al vaccinului</h6>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+  
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-item__link" href="/">
+            <h6>Info pentru lucrătorii medicali</h6>
+          </a>
+  
+          <div class="submenu">
+              <div class="submenu-wrapper">
+                <ul class="submenu-list">
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Protocoale</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Ghiduri</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Programul Național de Vaccinare</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Resurse utile</h6>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+  
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-item__link" href="/">
+            <h6>Întrebări frecvente</h6>
+          </a>
+  
+          <div class="submenu">
+              <div class="submenu-wrapper">
+                <ul class="submenu-list">
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Întrebări și Răspunsuri</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Mituri despre vaccinare</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Vaccinarea în sarcină</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Vaccinarea în alăptare</h6>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+  
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-item__link" href="/">
+            <h6>Multimedia</h6>
+          </a>
+  
+          <div class="submenu align-right">
+              <div class="submenu-wrapper">
+                <ul class="submenu-list">
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Știri despre vaccinare</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Video</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Infografice</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Galerie foto</h6>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+  
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-item__link" href="/">
+            <h6>Patrula Imunitară</h6>
+          </a>
+  
+          <div class="submenu align-right">
+              <div class="submenu-wrapper">
+                <ul class="submenu-list">
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Ce reprezintă Patrula Imunitară?</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Pilotarea modului în școli</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Galerie foto</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Video</h6>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+  
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-item__link" href="/">
+            <h6>Răspuns la criza refugiaților</h6>
+          </a>
+  
+          <div class="submenu align-right">
+              <div class="submenu-wrapper">
+                <ul class="submenu-list">
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Broșuri</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Materiale informative</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Suportul UE - OMS</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                    <a class="submenu-item__link" href="/">
+                      <h6>Galerie foto</h6>
+                    </a>
+                  </li>
+                  <li class="submenu-list__item">
+                      <a class="submenu-item__link" href="/">
+                        <h6>Video</h6>
+                      </a>
+                    </li>
+                </ul>
+              </div>
+          </div>
+  
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+    <main class="articles">
+      <div class="main__container">
+        <!-- Banner Section -->
+<section class="banner">
+    <img
+      class="banner__img"
+      src="img/banners/banner-article.jpg"
+      alt="Banner Article Image"
+      width="1128"
+      height="630">
+</section>
+
+        <!-- Article with Image and Date -->
+        <article class="article">
+          <header class="article-header article-header__top article-header__date">
+            <span class="date-details">
+              <i class="icon-calendar"></i>
+              <time datetime="2024-08-12">12 august 2024</time>
+            </span>
+            <h3>Dovezile eficacității vaccinului contra HPV la băieți</h3>
+          </header>
+          <div class="article-body">
+            <p>
+              Se estimeaza ca aproape toate persoanele active sexual, barbati
+              sau femei, vor avea infectie cu un tip de virus HPV cel putin
+              odata in viata, insa cei mai multi nu vor stii de prezenta
+              infectiei. Infectia cu tulpini de virus uman papilloma se
+              transmite prin contact sexual sau alt tip de contact intim direct
+              piele la piele.
+            </p>
+            <p>
+              Anumite tipuri de HPV determina aparitia de
+              <a href="#">condiloame</a> (negi genitali), iar altele determina
+              aparitia de <a href="#">displazii</a> (leziuni precanceroase) care
+              pot evolua in cancer. Majoritatea infectiilor cu tulpini de virus
+              papiloma uman nu determina aparitia leziunilor canceroase, dar
+              infectia cu anumite tulpini ale virusului HPV poate sa determine
+              aparitia <a href="#">cancerului de col uterin</a> (partea
+              inferioara a uterului care se continua cu vaginul) la femei.
+              Exista 15 tulpini cu risc inalt oncogen, din care 2 (HPV 18 si HPV
+              16) sunt raspunzatoare de 70% din tipurile de cancer de col
+              uterin. Se considera ca aproximativ 99% dintre cazurile de cancer
+              de col uterin se datoreaza infectiei cu HPV.
+            </p>
+            <p>
+              De cele mai multe ori sistemul imun reuseste sa elimine virusul in
+              aproximativ 2 ani,
+              <strong>inainte ca acesta sa produca probleme de sanatate.</strong>
+              In cazurile in care infectia cu HPV persista timp de mai multi
+              ani, aceasta poate sa duca la aparitia cancerului de col uterin.
+              In aparitia cancerului de col uterin sunt descrise 4 etape:
+            </p>
+            <ol>
+              <li>Infectia primara cu HPV</li>
+              <li>Persistenta infectiei cu HPV (vs. eliminarea virusului)</li>
+              <li>Evolutia infectiei persistente catre leziuni precanceroase</li>
+              <li>Invazia</li>
+            </ol>
+            <p>
+              Infectia cu HPV poate fi asociata si cu devoltarea altor cancere
+              ale organelor genitale masculine sau feminine (de penis, de vagin
+              sau vulva), cancere de anus, dar si ale regiunii orofaringeale
+              (cancere ale gurii, ale corzilor vocale).
+            </p>
+            <img src="img/image-article-hpv.jpg" alt="Image Article HPV" width="1080" height="600"/>
+          </div>
+        </article>
+
+        <!-- Article with Huge Video Component -->
+        <article class="article">
+          <header class="article-header">
+            <h3>Tipuri de HPV</h3>
+          </header>
+          <div class="article-body">
+            <p>
+              Dintre tulpinile de HPV cunoscute, aproximativ 40 de tipuri
+              afecteaza in principal zona organelor genitale. Dintre acestea,
+              aproximativ 16 tulpini sunt considerate “de risc inalt” in
+              aparitia cancerului genital. <br />
+              Genotipurile HPV implicate in devoltarea cancerelor genitale:
+            </p>
+
+            <ol>
+              <li>
+                Tulpini HPV de risc oncogen inalt (high risk) in primul rand
+                tulpinile 16 si 18, care sunt implicate in aparitia a
+                aproximativ 70% dintre cancerele cervicale, dar si tulpinile 31,
+                33, 33, 34, 35, 39, 45, 51, 52, 56, 58,59, 66 si 68 sunt inalt
+                oncogene. Acestea determina la femei modificari ale celulelor de
+                la nivelul zonei cervico-vaginale si pot duce la dezvoltarea
+                cancerului de col uterin
+              </li>
+              <li>
+                Tulpini HPV incadrate in clase cu posibil risc oncogen: 26, 30,
+                34 53, 66,67,69, 70 73, 82,85 si 97.
+              </li>
+              <li>
+                Tulpini HPV incadrate in clasa de risc oncogene scazut: 6, 11,
+                28, 32, 44, 43, 44, 54, 55, 57, 61, 62, 71, 72, 74, 81, 83, 84,
+                86, 87 si 89. Aceste tulpini pot duce la aparitia condiloamelor
+                acuminate (condilomatoza genitala)
+              </li>
+            </ol>
+
+            <a class="video-item" data-fslightbox="video-gallery" href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+    <i class="icon-play"></i>
+    <img src="img/video-image-hpv.jpg" alt="Video Image">
+    <h5>Prin ce se diferențiază HPV</h5>
+</a>
+        
+            <p>
+              Mai mult de 15 tulpini sunt implicate in aparitia
+              epidermodisplazii veruciforme:
+            </p>
+        
+            <ol>
+              <li>Hiperplazii focalizate pe epiteliu (oral): HPV 13, 32</li>
+              <li>Papiloame orale: HPV 6, 7, 11, 16, 32</li>
+              <li>Cancer oro-faringian: HPV 16</li>
+              <li>Papilomatoza laringeala HPV 6, 11</li>
+            </ol>
+          </div>
+        </article>
+
+        <!-- Article with Content Only -->
+        <article class="article">
+          <header class="article-header">
+            <h3>Cum se transmite infectia HPV</h3>
+          </header>
+          <div class="article-body">
+            <p>
+              Virusul se transmite prin contact direct, piele pe piele, fie in
+              cursul actului sexual (contact sexual vaginal, anal sau oral), fie
+              la atingerea pielii din regiunea contaminata (frecvent, regiunea
+              genitala).
+            </p>
+            <p>
+              Infectarea prin contact sexual se produce chiar daca nu este
+              contact penetrant. Se produce astfel infectarea colului uterin, a
+              tegumentului din zona genitala externa, sau alte regiuni expuse
+              contactului direct cu pielea persoanei infectate. Se considera ca
+              orice persoana activa sexual este expusa riscului de infectare,
+              iar prezervativele protejeaza doar partial.
+            </p>
+            <p>
+              Leziunile determinate de infectia cu HPV la nivel orofaringian pot
+              fi determinate de infectarea prin contact sexual oral.<br />O
+              persoana care are leziuni determinate de infectia HPV si isi
+              atinge leziunile le poate transmite altei persoane prin atingere.
+              De asemenea, daca isi atinge leziunile si atinge o alta parte a
+              corpului, <a href="#">verucile</a> (negii) se pot imprastia foarte
+              usor.
+            </p>
+          </div>
+        </article>
+
+
+        <!-- Article with Content Only -->
+        <article class="article">
+          <header class="article-header">
+            <h3>Semne și simptome</h3>
+          </header>
+          <div class="article-body">
+            <p>
+              In cele mai multe situatii, infectia cu HPV nu determina semne si
+              simptome. Comunitatea medicala de specialitate considera ca pana
+              la trei sferturi dintre femeile active sexual se pot infecta la un
+              moment dat cu HPV, insa infectia va fi invinsa de sistemul
+              imunitar in 2-3 ani.
+            </p>
+            <p>
+              Prezenta infectiei cu virusul papiloma uman nu inseamna neaparat
+              ca persoanele infectate vor aparea semne si simptome. Daca
+              sistemul imunitar nu invinge infectia, atunci cele mai frecvente
+              semne care se manifesta se refera la aparitia diferitelor forme de
+              veruci (negi), la un anumit interval de timp (saptamani, luni sau
+              ani) de la contactul care a condus la infectarea persoanei.
+            </p>
+            <p>
+              In functie de tulpina, sau tulpinile de HPV care au determinat
+              infectia, forma sub care apar leziunile pe piele sau mucoase poate
+              sa fie diferita.
+            </p>
+          </div>
+        </article>
+
+
+        <!-- Article with Quotes and Author -->
+        <article class="article">
+          <header class="article-header">
+            <h3>Complicatii ale infectiei cu HPV</h3>
+          </header>
+          <div class="article-body">
+            <p>
+              Complicatiile pot fi determinate fie de cresterea in dimensiuni a
+              verucilor sau suprainfectarea bacteriana a acestora, fie de
+              asocierea infectiei HPV cu alte infectii transmisibile sexual
+              (hepatite tip B si C, sifilis, herpes, chlamydia, HIV), fie de
+              posibilitatea dezvoltarii cancerelor.
+            </p>
+            <p>
+              Simpla infectie cu virus HPV nu determina cancer. Virusul
+              infecteaza celulele, acestea se transforma mai intai in celule
+              anormale (displazii) si ulterior vor deveni maligne. De obicei,
+              acest proces nu prezinta niciun fel de simptom in faza incipienta,
+              iar cancerele se dezvolta lent. De exemplu, un cancer de col
+              uterin se dezvolta in 10 pana la 40 de ani, rareori in 2 ani.
+            </p>
+            <p>
+              Doar aproximativ 10% din femeile infectate cu tulpini HPV cu risc
+              inalt dezvolta infectii persistente. Acestea au riscul cel mai
+              mare de a dezvolta leziuni precanceroase sau cancer de col uterin.
+            </p>
+
+            <div class="article-body__author">
+              <img src="img/author.png" alt="Rusu Alexandru" />
+              <div class="author-details">
+                <h3>Rusu Alexandru</h3>
+                <p>Medic primar / Chirurgie generala</p>
+              </div>
+            </div>
+
+            <blockquote class="quote">
+    <div class="blockquote-wrapper">
+        <div class="icon">
+            <i class="icon-information-circle"></i>
+        </div>
+        Ca doctor, este esențial să subliniez importanța vaccinării împotriva HPV (virusul papiloma uman). HPV este una dintre cele mai comune infecții virale transmise pe cale sexuală și poate duce la dezvoltarea unor tipuri de cancer, inclusiv cel de col uterin. Vaccinarea este extrem de eficientă în prevenirea infecțiilor cu tulpinile de HPV care sunt cele mai asociate cu cancerul. Este recomandat ca atât fetele, cât și băieții să fie vaccinați înainte de a deveni activi sexual, pentru a le oferi protecția maximă. Educarea și conștientizarea publicului despre beneficiile vaccinului HPV sunt vitale pentru reducerea incidenței cancerelor asociate și pentru protejarea sănătății publice.        
+    </div>
+</blockquote>
+
+
+            <p>
+              Vaccinarea împotriva HPV este un pas crucial în prevenirea acestor
+              afecțiuni.
+              <strong
+                >Este esențial ca adolescenții să fie vaccinați la o vârstă
+                tânără </strong
+              >, înainte de expunerea la virus, pentru a beneficia de protecție
+              maximă.
+            </p>
+
+            <blockquote class="info">
+    <div class="blockquote-wrapper">
+        <div class="icon">
+            <i class="icon-information-circle"></i>
+        </div>
+        De asemenea, este important să reținem că, deși vaccinarea împotriva HPV oferă o protecție semnificativă, aceasta nu elimină complet riscul de infecție sau de dezvoltare a cancerului. De aceea, screeningul regulat, cum ar fi testul Papanicolau și testarea HPV, rămân esențiale pentru detectarea timpurie a schimbărilor celulare care ar putea evolua în cancer. Prin combinarea vaccinării cu monitorizarea regulată, putem reduce semnificativ riscul de cancer de col uterin și alte afecțiuni legate de HPV. Așadar, este crucial ca atât pacienții, cât și cadrele medicale să colaboreze pentru a implementa aceste măsuri de prevenție și să se asigure că populația este bine informată și protejată.        
+    </div>
+</blockquote>
+
+
+            <p>
+              În concluzie, prevenția prin vaccinare și screeningul regulat
+              reprezintă pilonii esențiali în lupta împotriva infecțiilor cu HPV
+              și a complicațiilor asociate acestora. Este responsabilitatea
+              noastră, ca medici, să educăm și să susținem pacienții în
+              adoptarea acestor măsuri, pentru a reduce semnificativ incidența
+              cancerelor asociate și pentru a asigura o sănătate publică mai
+              bună. Prin eforturi comune, putem proteja generațiile viitoare de
+              bolile cauzate de HPV și să contribuim la un viitor mai sănătos
+              pentru toți.
+            </p>
+          </div>
+        </article>
+
+
+        <!-- Article with Links  -->
+        <article class="article">
+          <header class="article-header">
+            <h3>Link-uri sursă</h3>
+          </header>
+          <div class="article-body">
+            <ul>
+              <li>
+                <a href="#">
+                  https://www.reginamaria.ro/utile/dictionar-de-afectiuni/infectia-cu-virusul-papiloma-uman-hpv
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  https://www.delucru.md/articles/cum-poti-deveni-somelier-de-miere-moldova-are-primii-21-de-specialisti-certificati
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  https://www.delucru.md/articles/cu-sau-fara-laptop-in-cafenele-ce-cred-freelancerii-si-reprezentantii-horeca
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Article with Photo Gallery -->
+        <article class="article">
+          <header class="article-header article-header__link">
+            <h3>Galerie foto</h3>
+            <a class="link link__secondary" href="#">Vezi mai multe</a>
+          </header>
+          <div class="article-body">
+            <div class="gallery gallery-photo">
+              <a class="gallery-item photo-item" data-fslightbox="photo-gallery" href="img/photos/1.jpg">
+    <img src="img/photos/1.jpg" alt="Photo Gallery">
+    <i class="icon-magnifying-glass-plus"></i>
+</a>
+              <a class="gallery-item photo-item" data-fslightbox="photo-gallery" href="img/photos/2.jpg">
+    <img src="img/photos/2.jpg" alt="Photo Gallery">
+    <i class="icon-magnifying-glass-plus"></i>
+</a>
+              <a class="gallery-item photo-item" data-fslightbox="photo-gallery" href="img/photos/3.jpg">
+    <img src="img/photos/3.jpg" alt="Photo Gallery">
+    <i class="icon-magnifying-glass-plus"></i>
+</a>
+              <a class="gallery-item photo-item" data-fslightbox="photo-gallery" href="img/photos/4.jpg">
+    <img src="img/photos/4.jpg" alt="Photo Gallery">
+    <i class="icon-magnifying-glass-plus"></i>
+</a>
+              <a class="gallery-item photo-item" data-fslightbox="photo-gallery" href="img/photos/5.jpg">
+    <img src="img/photos/5.jpg" alt="Photo Gallery">
+    <i class="icon-magnifying-glass-plus"></i>
+</a>
+              <a class="gallery-item photo-item" data-fslightbox="photo-gallery" href="img/photos/6.jpg">
+    <img src="img/photos/6.jpg" alt="Photo Gallery">
+    <i class="icon-magnifying-glass-plus"></i>
+</a>
+              <a class="gallery-item photo-item" data-fslightbox="photo-gallery" href="img/photos/7.jpg">
+    <img src="img/photos/7.jpg" alt="Photo Gallery">
+    <i class="icon-magnifying-glass-plus"></i>
+</a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- Article with Video Gallery -->
+        <article class="article">
+          <header class="article-header article-header__link">
+            <h3>Videografice</h3>
+            <a class="link link__secondary" href="#">Vezi mai multe</a>
+          </header>
+          <div class="article-body">
+            <div class="gallery gallery-video">
+              <a class="video-item" data-fslightbox="video-gallery" href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+    <i class="icon-play"></i>
+    <img src="img/video-image-hpv.jpg" alt="Video Image">
+    <h5>Ingredientele Vaccinului</h5>
+</a>
+              <a class="video-item" data-fslightbox="video-gallery" href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+    <i class="icon-play"></i>
+    <img src="img/video-image-hpv.jpg" alt="Video Image">
+    <h5>Dezvoltarea și testarea unui vaccin</h5>
+</a>
+              <a class="video-item" data-fslightbox="video-gallery" href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+    <i class="icon-play"></i>
+    <img src="img/video-image-hpv.jpg" alt="Video Image">
+    <h5>Siguranța vaccinurilor și reacții adverse</h5>
+</a>
+              <a class="video-item" data-fslightbox="video-gallery" href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+    <i class="icon-play"></i>
+    <img src="img/video-image-hpv.jpg" alt="Video Image">
+    <h5>Ingredientele Vaccinului</h5>
+</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article with Tabs and Infographic Gallery -->
+        <article class="article">
+          <header class="article-header">
+            <h3>Infografice</h3>
+          </header>
+          <div class="article-body">
+            <div class="tabs-nav">
+              <button class="button button__tab tab-item active">Vaccinare</button>
+              <button class="button button__tab tab-item">Tusea convulsivă</button>
+              <button class="button button__tab tab-item">Tuberculoza</button>
+              <button class="button button__tab tab-item">Rujeola & Rubeola</button>
+              <button class="button button__tab tab-item">Poliomielita</button>
+              <button class="button button__tab tab-item">Rotavirusul</button>
+              <button class="button button__tab tab-item">Pneumococi</button>
+              <button class="button button__tab tab-item">Papilomavirusul uman</button>
+              <button class="button button__tab tab-item">Hepatita B</button>
+              <button class="button button__tab tab-item">COVID-19</button>
+              <button class="button button__tab tab-item">Gripa</button>
+              <button class="button button__tab tab-item">Difteria</button>
+              <button class="button button__tab tab-item">Oreionul</button>
+              <button class="button button__tab tab-item">Tetanosul</button>
+              <button class="button button__tab tab-item">Alăptare</button>
+            </div>
+            <div class="tabs-content gallery gallery-infographics">
+              <a class="gallery-item infographics-item" data-fslightbox="infographics-gallery" href="img/infographics/1.jpg">
+    <img src="img/infographics/1.jpg" alt="Infographics Gallery">
+    <i class="icon-magnifying-glass-plus"></i>
+</a>
+              <a class="gallery-item infographics-item" data-fslightbox="infographics-gallery" href="img/infographics/2.jpg">
+    <img src="img/infographics/2.jpg" alt="Infographics Gallery">
+    <i class="icon-magnifying-glass-plus"></i>
+</a>
+              <a class="gallery-item infographics-item" data-fslightbox="infographics-gallery" href="img/infographics/3.jpg">
+    <img src="img/infographics/3.jpg" alt="Infographics Gallery">
+    <i class="icon-magnifying-glass-plus"></i>
+</a>
+              <a class="gallery-item infographics-item" data-fslightbox="infographics-gallery" href="img/infographics/4.jpg">
+    <img src="img/infographics/4.jpg" alt="Infographics Gallery">
+    <i class="icon-magnifying-glass-plus"></i>
+</a>
+              <a class="gallery-item infographics-item" data-fslightbox="infographics-gallery" href="img/infographics/5.jpg">
+    <img src="img/infographics/5.jpg" alt="Infographics Gallery">
+    <i class="icon-magnifying-glass-plus"></i>
+</a>
+              <a class="gallery-item infographics-item" data-fslightbox="infographics-gallery" href="img/infographics/6.jpg">
+    <img src="img/infographics/6.jpg" alt="Infographics Gallery">
+    <i class="icon-magnifying-glass-plus"></i>
+</a>
+              <a class="gallery-item infographics-item" data-fslightbox="infographics-gallery" href="img/infographics/7.jpg">
+    <img src="img/infographics/7.jpg" alt="Infographics Gallery">
+    <i class="icon-magnifying-glass-plus"></i>
+</a>
+              <a class="gallery-item infographics-item" data-fslightbox="infographics-gallery" href="img/infographics/8.jpg">
+    <img src="img/infographics/8.jpg" alt="Infographics Gallery">
+    <i class="icon-magnifying-glass-plus"></i>
+</a>
+              <a class="gallery-item infographics-item" data-fslightbox="infographics-gallery" href="img/infographics/9.jpg">
+    <img src="img/infographics/9.jpg" alt="Infographics Gallery">
+    <i class="icon-magnifying-glass-plus"></i>
+</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__wrapper">
+            <div class="footer-col footer-col__contact">
+                <div class="footer-content">
+                    <h3 class="footer-col__contact-title">Aveți întrebări suplimentare?</h3>
+                    <p class="footer-col__contact-subtitle">Scrieți-ne un mesaj și noi vă ajutăm!</p>
+                </div>
+                <button id="contact-modal-btn" class="button button__blue">Contactați-ne</button>
+            </div>
+            <div class="footer-col footer-col__info">
+                <img class="footer-col__info-img" src="img/logos/ue.svg" alt="Uniunea Europeana">
+                <h4 class="footer-col__info-title">Sursă oficială de informare despre procesul de vaccinare din Republica Moldova</h4>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- GSAP JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js?_v=20240903142038"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js?_v=20240903142038"></script>
+
+    <!-- FSLightBox -->
+    <script src="https://cdn.jsdelivr.net/npm/fslightbox/index.js?_v=20240903142038"></script>
+    
+    <script src="js/app.min.js?_v=20240903142038"></script>
+  </body>
+</html>

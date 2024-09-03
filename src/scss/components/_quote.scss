@@ -1,0 +1,88 @@
+blockquote {
+    padding: 1px;
+    border-radius: 8px;
+    
+    .blockquote-wrapper {
+        @include flex(row, flex-start, stretch);
+        color: $text-main;
+        padding: 23px;
+        border-radius: 7px;
+
+
+        .icon {
+            position: relative;
+            margin-right: 24px;
+            display: flex;
+            align-items: center;
+            
+            i {
+                font-size: 26px;
+                z-index: 2;
+            }
+            
+            &::before {
+                content: '';
+                position: absolute;
+                width: 2px;
+                height: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 26px;
+                max-height: calc(26px + 4px + 4px);
+                height: 100%;
+            }
+        }
+    }
+
+    &.quote {
+        background: linear-gradient(90deg, $main-blue, $white 100%);
+        
+        .blockquote-wrapper {
+            background: linear-gradient(90deg, $main-aliceblue 30%, $white 100%);
+
+            .icon {
+                i {
+                    color: $main-blue;
+                }
+
+                &::before {
+                    background-color: $main-blue;
+                    opacity: 0.4;
+                }
+
+                &::after {
+                    background-color: $main-aliceblue;
+                }
+            }
+        }
+    }
+
+    &.info {
+        background: linear-gradient(90deg, $orange-bg, $white 100%);
+        
+        .blockquote-wrapper {
+            background: linear-gradient(90deg, lighten($orange-bg, 45%) 30%, $white 100%);
+
+            .icon {
+                i {
+                    color: $orange-bg;
+                }
+
+                &::before {
+                    background-color: $orange-bg;
+                    opacity: 0.4;
+                }
+
+                &::after {
+                    background-color: lighten($orange-bg, 45%)
+                }
+            }
+        }
+    }
+}

@@ -25,7 +25,12 @@ h6 {
 
 p {
     @include adaptiv-value('font-size', 16, 12, 1);
-    line-height: 22px;
+    @include adaptiv-value('line-height', 24, 22, 1);
+}
+
+blockquote {
+    @include adaptiv-value('font-size', 16, 12, 1);
+    @include adaptiv-value('line-height', 24, 22, 1);
 }
 
 label {

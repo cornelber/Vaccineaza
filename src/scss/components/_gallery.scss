@@ -1,0 +1,133 @@
+.gallery {
+    width: 100%;
+    display: grid;
+    gap: 8px;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    @media (max-width: $tablet) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: $mobileMedium) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $mobileSmall) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    &-photo {
+        column-gap: 8px;
+        row-gap: 10px;
+        a {
+            max-height: 208px;
+            img {
+                max-height: 208px;
+             }
+        }
+        
+    }
+
+    &-video {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+        @media (max-width: $mobileMedium) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+.video-item {
+    position: relative;
+    border: 1px solid $gray-stroke;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        padding: 20px;
+        z-index: 10;
+        font-size: 30px;
+    }
+
+    h5 {
+        position: absolute;
+        padding: 16px 24px;
+        bottom: 0;
+        width: 100%;
+        color: $text-main;
+        background-color: rgba(0, 122, 255, 0.2);
+        backdrop-filter: blur(50px);
+        transition: background-color 0.4s ease-in-out;
+    }
+
+    &:hover {
+        h5 {
+            background-color: rgba(0, 122, 255, 0.5);
+        }
+    }
+}
+
+
+.photo-item,
+.infographics-item {
+    position: relative;
+    display: block;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    i {
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        padding: 15px;
+        border-radius: 50%;
+        color: $text-main;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: opacity 0.4s ease-in-out;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.0);
+        border-radius: 4px;
+        transition: background-color 0.4s ease-in-out;
+    }
+
+    &:hover {
+        &::before {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        i {
+            opacity: 1;
+        }
+    }
+}

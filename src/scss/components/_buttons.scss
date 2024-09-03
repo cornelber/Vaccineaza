@@ -23,4 +23,27 @@
     &__submit {
         max-width: 100%;
     }
+
+    &__tab {
+        width: fit-content;
+        padding: 12px 24px;
+        background-color: $main-aliceblue;
+        border: 1px solid $main-blue-stroke;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.4s ease-in-out;
+
+        &.active,
+        &.active:hover {
+            background-color: $main-blue;
+            border-color: $main-blue;
+            color: $white;
+        }
+
+        &:hover {
+            background-color: darken($main-aliceblue, 10%);
+            border-color: $main-blue;
+            
+        }
+    }
 }

@@ -85,3 +85,16 @@
         margin-bottom: 8px;
     }
 }
+
+// Banner Only Hero
+.banner {
+    margin: 24px 0;
+
+    &__img {
+        max-width: 1128px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}
