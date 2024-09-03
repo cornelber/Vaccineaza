@@ -496,3 +496,31 @@
         }
     }
 }
+
+// Link Card
+.link-card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 8px;
+    background-color: $white;
+    border: 1px solid $gray-stroke;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        border-color: $gray-stroke-hover;
+    }
+
+    .icon {
+        font-size: 30px;
+        color: $main-blue;
+    }
+
+    h5 {
+        flex: 1;
+        font-weight: 500;
+    }
+}
