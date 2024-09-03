@@ -374,6 +374,10 @@ input {
   display: flex;
 }
 
+.direction-column {
+  flex-direction: column;
+}
+
 .col-1 {
   grid-column: 1 span;
 }
@@ -1643,6 +1647,18 @@ input {
   border: 1px solid #ECECEC;
   transition: border-color 0.2s ease-in-out;
 }
+.accordion-item.faq-accordion-item {
+  background-color: #FFFFFF;
+}
+.accordion-item.faq-accordion-item p {
+  color: #757A89;
+}
+.accordion-item.faq-accordion-item[data-expanded=true] {
+  border-color: #ECECEC;
+}
+.accordion-item.faq-accordion-item:hover {
+  border-color: #B6B6B6;
+}
 .accordion-item .accordion-header {
   display: flex;
   justify-content: space-between;
@@ -1847,7 +1863,7 @@ input {
 .page-intro {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #FFF;
+  background-color: #FFFFFF;
 }
 @media (max-width: 1128px) {
   .page-intro {
@@ -1881,6 +1897,11 @@ input {
 .page-intro h1 {
   text-align: center;
   margin-bottom: 24px;
+}
+.page-intro p {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #757A89;
 }
 .page-intro__tabs {
   display: flex;
