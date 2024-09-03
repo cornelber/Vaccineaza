@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./components/head.html', {'title': 'Articole'})
+
+<body>
+  @@include('./components/header.html')
+  <main>
+    <div class="__container">
+        <div class="articles">
+            <aside class="social-share social-links">
+                <div class="social-share__wrapper">
+                    <a href="#" class="social-links__item">
+                        <img src="@img/icons/facebook.svg" alt="Facebook" class="social-links__icon" />
+                    </a>
+                    <a href="#" class="social-links__item">
+                        <img src="@img/icons/facebook.svg" alt="LinkedIn" class="social-links__icon" />
+                    </a>
+                    <a href="#" class="social-links__item">
+                        <img src="@img/icons/facebook.svg" alt="Telegram" class="social-links__icon" />
+                    </a>
+                    <a href="#" class="social-links__item">
+                        <img src="@img/icons/facebook.svg" alt="Link" class="social-links__icon" />
+                    </a>
+                </div>
+            </aside>
+
+            <section class="banner">
+                <img
+                class="banner__img"
+                src="@img/hpv.png"
+                alt="HPV"
+                width="1128"
+                height="630">
+            </section>
+
+            <!-- Article with Image and Date -->
+            <article class="article">
+                <header class="article-header article-header__top article-header__date">
+                <span class="date-details">
+                    <i class="icon-calendar"></i>
+                    <time datetime="2024-08-12">12 august 2024</time>
+                </span>
+                <h3>Dovezile eficacității vaccinului contra HPV la băieți</h3>
+                </header>
+                <div class="article-body">
+                <p>
+                    Se estimeaza ca aproape toate persoanele active sexual, barbati
+                    sau femei, vor avea infectie cu un tip de virus HPV cel putin
+                    odata in viata, insa cei mai multi nu vor stii de prezenta
+                    infectiei. Infectia cu tulpini de virus uman papilloma se
+                    transmite prin contact sexual sau alt tip de contact intim direct
+                    piele la piele.
+                </p>
+                <p>
+                    Anumite tipuri de HPV determina aparitia de
+                    <a href="#">condiloame</a> (negi genitali), iar altele determina
+                    aparitia de <a href="#">displazii</a> (leziuni precanceroase) care
+                    pot evolua in cancer. Majoritatea infectiilor cu tulpini de virus
+                    papiloma uman nu determina aparitia leziunilor canceroase, dar
+                    infectia cu anumite tulpini ale virusului HPV poate sa determine
+                    aparitia <a href="#">cancerului de col uterin</a> (partea
+                    inferioara a uterului care se continua cu vaginul) la femei.
+                    Exista 15 tulpini cu risc inalt oncogen, din care 2 (HPV 18 si HPV
+                    16) sunt raspunzatoare de 70% din tipurile de cancer de col
+                    uterin. Se considera ca aproximativ 99% dintre cazurile de cancer
+                    de col uterin se datoreaza infectiei cu HPV.
+                </p>
+                <p>
+                    De cele mai multe ori sistemul imun reuseste sa elimine virusul in
+                    aproximativ 2 ani,
+                    <strong>inainte ca acesta sa produca probleme de sanatate.</strong>
+                    In cazurile in care infectia cu HPV persista timp de mai multi
+                    ani, aceasta poate sa duca la aparitia cancerului de col uterin.
+                    In aparitia cancerului de col uterin sunt descrise 4 etape:
+                </p>
+                <ol>
+                    <li>Infectia primara cu HPV</li>
+                    <li>Persistenta infectiei cu HPV (vs. eliminarea virusului)</li>
+                    <li>Evolutia infectiei persistente catre leziuni precanceroase</li>
+                    <li>Invazia</li>
+                </ol>
+                <p>
+                    Infectia cu HPV poate fi asociata si cu devoltarea altor cancere
+                    ale organelor genitale masculine sau feminine (de penis, de vagin
+                    sau vulva), cancere de anus, dar si ale regiunii orofaringeale
+                    (cancere ale gurii, ale corzilor vocale).
+                </p>
+                <img src="@img/dovezi-vaccin-eficacitate.png" alt="Dovezi Vaccin Eficacitate" width="1080" height="600"/>
+                </div>
+            </article>
+
+            <!-- Article with Huge Video Component -->
+            <article class="article">
+                <header class="article-header">
+                    <h3>Tipuri de HPV</h3>
+                </header>
+                <div class="article-body">
+                    <p>
+                    Dintre tulpinile de HPV cunoscute, aproximativ 40 de tipuri
+                    afecteaza in principal zona organelor genitale. Dintre acestea,
+                    aproximativ 16 tulpini sunt considerate “de risc inalt” in
+                    aparitia cancerului genital. <br />
+                    Genotipurile HPV implicate in devoltarea cancerelor genitale:
+                    </p>
+        
+                    <ol>
+                    <li>
+                        Tulpini HPV de risc oncogen inalt (high risk) in primul rand
+                        tulpinile 16 si 18, care sunt implicate in aparitia a
+                        aproximativ 70% dintre cancerele cervicale, dar si tulpinile 31,
+                        33, 33, 34, 35, 39, 45, 51, 52, 56, 58,59, 66 si 68 sunt inalt
+                        oncogene. Acestea determina la femei modificari ale celulelor de
+                        la nivelul zonei cervico-vaginale si pot duce la dezvoltarea
+                        cancerului de col uterin
+                    </li>
+                    <li>
+                        Tulpini HPV incadrate in clase cu posibil risc oncogen: 26, 30,
+                        34 53, 66,67,69, 70 73, 82,85 si 97.
+                    </li>
+                    <li>
+                        Tulpini HPV incadrate in clasa de risc oncogene scazut: 6, 11,
+                        28, 32, 44, 43, 44, 54, 55, 57, 61, 62, 71, 72, 74, 81, 83, 84,
+                        86, 87 si 89. Aceste tulpini pot duce la aparitia condiloamelor
+                        acuminate (condilomatoza genitala)
+                    </li>
+                    </ol>
+                    
+                    <div class="videos">
+                        @@include('./components/cards/video-card.html', {
+                            'img': 'hpv-thumbnail.png',
+                            'alt': 'HPV',
+                            'title': 'Prin ce se diferențiază HPV',
+                            'type-card': 'huge',
+                        })
+                    </div>
+                
+                    <p>
+                    Mai mult de 15 tulpini sunt implicate in aparitia
+                    epidermodisplazii veruciforme:
+                    </p>
+                
+                    <ol>
+                    <li>Hiperplazii focalizate pe epiteliu (oral): HPV 13, 32</li>
+                    <li>Papiloame orale: HPV 6, 7, 11, 16, 32</li>
+                    <li>Cancer oro-faringian: HPV 16</li>
+                    <li>Papilomatoza laringeala HPV 6, 11</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- Article with Only Content -->
+            <article class="article">
+                <header class="article-header">
+                  <h3>Cum se transmite infectia HPV</h3>
+                </header>
+                <div class="article-body">
+                  <p>
+                    Virusul se transmite prin contact direct, piele pe piele, fie in
+                    cursul actului sexual (contact sexual vaginal, anal sau oral), fie
+                    la atingerea pielii din regiunea contaminata (frecvent, regiunea
+                    genitala).
+                  </p>
+                  <p>
+                    Infectarea prin contact sexual se produce chiar daca nu este
+                    contact penetrant. Se produce astfel infectarea colului uterin, a
+                    tegumentului din zona genitala externa, sau alte regiuni expuse
+                    contactului direct cu pielea persoanei infectate. Se considera ca
+                    orice persoana activa sexual este expusa riscului de infectare,
+                    iar prezervativele protejeaza doar partial.
+                  </p>
+                  <p>
+                    Leziunile determinate de infectia cu HPV la nivel orofaringian pot
+                    fi determinate de infectarea prin contact sexual oral.<br />O
+                    persoana care are leziuni determinate de infectia HPV si isi
+                    atinge leziunile le poate transmite altei persoane prin atingere.
+                    De asemenea, daca isi atinge leziunile si atinge o alta parte a
+                    corpului, <a href="#">verucile</a> (negii) se pot imprastia foarte
+                    usor.
+                  </p>
+                </div>
+            </article>
+
+            <!-- Article with Content Only -->
+            <article class="article">
+                <header class="article-header">
+                    <h3>Semne și simptome</h3>
+                </header>
+                <div class="article-body">
+                    <p>
+                        In cele mai multe situatii, infectia cu HPV nu determina semne si
+                        simptome. Comunitatea medicala de specialitate considera ca pana
+                        la trei sferturi dintre femeile active sexual se pot infecta la un
+                        moment dat cu HPV, insa infectia va fi invinsa de sistemul
+                        imunitar in 2-3 ani.
+                    </p>
+                    <p>
+                        Prezenta infectiei cu virusul papiloma uman nu inseamna neaparat
+                        ca persoanele infectate vor aparea semne si simptome. Daca
+                        sistemul imunitar nu invinge infectia, atunci cele mai frecvente
+                        semne care se manifesta se refera la aparitia diferitelor forme de
+                        veruci (negi), la un anumit interval de timp (saptamani, luni sau
+                        ani) de la contactul care a condus la infectarea persoanei.
+                    </p>
+                    <p>
+                        In functie de tulpina, sau tulpinile de HPV care au determinat
+                        infectia, forma sub care apar leziunile pe piele sau mucoase poate
+                        sa fie diferita.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Article with Quotes and Author -->
+            <article class="article">
+                <header class="article-header">
+                    <h3>Complicatii ale infectiei cu HPV</h3>
+                </header>
+                <div class="article-body">
+                    <p>
+                        Complicatiile pot fi determinate fie de cresterea in dimensiuni a
+                        verucilor sau suprainfectarea bacteriana a acestora, fie de
+                        asocierea infectiei HPV cu alte infectii transmisibile sexual
+                        (hepatite tip B si C, sifilis, herpes, chlamydia, HIV), fie de
+                        posibilitatea dezvoltarii cancerelor.
+                    </p>
+                    <p>
+                        Simpla infectie cu virus HPV nu determina cancer. Virusul
+                        infecteaza celulele, acestea se transforma mai intai in celule
+                        anormale (displazii) si ulterior vor deveni maligne. De obicei,
+                        acest proces nu prezinta niciun fel de simptom in faza incipienta,
+                        iar cancerele se dezvolta lent. De exemplu, un cancer de col
+                        uterin se dezvolta in 10 pana la 40 de ani, rareori in 2 ani.
+                    </p>
+                    <p>
+                        Doar aproximativ 10% din femeile infectate cu tulpini HPV cu risc
+                        inalt dezvolta infectii persistente. Acestea au riscul cel mai
+                        mare de a dezvolta leziuni precanceroase sau cancer de col uterin.
+                    </p>
+        
+                    <div class="article-body__author">
+                        <img src="@img/rusu-alexandru.png" alt="Rusu Alexandru" />
+                        <div class="author-details">
+                        <h3>Rusu Alexandru</h3>
+                        <p>Medic primar / Chirurgie generala</p>
+                        </div>
+                    </div>
+        
+                    @@include('./components/blockquote.html', {
+                        'type': 'quote',
+                        'icon': 'information-circle',
+                        'text': 'Ca doctor, este esențial să subliniez importanța vaccinării împotriva HPV (virusul papiloma uman). HPV este una dintre cele mai comune infecții virale transmise pe cale sexuală și poate duce la dezvoltarea unor tipuri de cancer, inclusiv cel de col uterin. Vaccinarea este extrem de eficientă în prevenirea infecțiilor cu tulpinile de HPV care sunt cele mai asociate cu cancerul. Este recomandat ca atât fetele, cât și băieții să fie vaccinați înainte de a deveni activi sexual, pentru a le oferi protecția maximă. Educarea și conștientizarea publicului despre beneficiile vaccinului HPV sunt vitale pentru reducerea incidenței cancerelor asociate și pentru protejarea sănătății publice.'
+                    })
+        
+                    <p>
+                        Vaccinarea împotriva HPV este un pas crucial în prevenirea acestor
+                        afecțiuni.
+                        <strong
+                        >Este esențial ca adolescenții să fie vaccinați la o vârstă
+                        tânără </strong
+                        >, înainte de expunerea la virus, pentru a beneficia de protecție
+                        maximă.
+                    </p>
+        
+                    @@include('./components/blockquote.html', {
+                        'type': 'info',
+                        'icon': 'information-circle',
+                        'text': 'De asemenea, este important să reținem că, deși vaccinarea împotriva HPV oferă o protecție semnificativă, aceasta nu elimină complet riscul de infecție sau de dezvoltare a cancerului. De aceea, screeningul regulat, cum ar fi testul Papanicolau și testarea HPV, rămân esențiale pentru detectarea timpurie a schimbărilor celulare care ar putea evolua în cancer. Prin combinarea vaccinării cu monitorizarea regulată, putem reduce semnificativ riscul de cancer de col uterin și alte afecțiuni legate de HPV. Așadar, este crucial ca atât pacienții, cât și cadrele medicale să colaboreze pentru a implementa aceste măsuri de prevenție și să se asigure că populația este bine informată și protejată.'
+                    })
+        
+                    <p>
+                        În concluzie, prevenția prin vaccinare și screeningul regulat
+                        reprezintă pilonii esențiali în lupta împotriva infecțiilor cu HPV
+                        și a complicațiilor asociate acestora. Este responsabilitatea
+                        noastră, ca medici, să educăm și să susținem pacienții în
+                        adoptarea acestor măsuri, pentru a reduce semnificativ incidența
+                        cancerelor asociate și pentru a asigura o sănătate publică mai
+                        bună. Prin eforturi comune, putem proteja generațiile viitoare de
+                        bolile cauzate de HPV și să contribuim la un viitor mai sănătos
+                        pentru toți.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Article with Links  -->
+            <article class="article">
+                <header class="article-header">
+                <h3>Link-uri sursă</h3>
+                </header>
+                <div class="article-body">
+                <ul>
+                    <li>
+                    <a href="#">
+                        https://www.reginamaria.ro/utile/dictionar-de-afectiuni/infectia-cu-virusul-papiloma-uman-hpv
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#">
+                        https://www.delucru.md/articles/cum-poti-deveni-somelier-de-miere-moldova-are-primii-21-de-specialisti-certificati
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#">
+                        https://www.delucru.md/articles/cu-sau-fara-laptop-in-cafenele-ce-cred-freelancerii-si-reprezentantii-horeca
+                    </a>
+                    </li>
+                </ul>
+                </div>
+            </article>
+
+            <!-- Article with Photo Gallery -->
+            <article class="article">
+                <header class="article-header article-header__link">
+                    <h3>Galerie foto</h3>
+                    <a class="link link__secondary" href="#">Vezi mai multe</a>
+                </header>
+                <div class="article-body">
+                    <div class="photos">
+                        <div class="photos-grid">
+                             @@include('./components/cards/image-card.html', {
+                                 'img': 'hpv.png',
+                                 'alt': 'HPV',
+                                 'title': 'Prin ce se diferențiază HPV',
+                             })
+                             @@include('./components/cards/image-card.html', {
+                                 'img': 'hpv.png',
+                                 'alt': 'HPV',
+                                 'title': 'Prin ce se diferențiază HPV',
+                             })
+                             @@include('./components/cards/image-card.html', {
+                                 'img': 'hpv.png',
+                                 'alt': 'HPV',
+                                 'title': 'Prin ce se diferențiază HPV',
+                             })
+                             @@include('./components/cards/image-card.html', {
+                                 'img': 'hpv.png',
+                                 'alt': 'HPV',
+                                 'title': 'Prin ce se diferențiază HPV',
+                             })
+                             @@include('./components/cards/image-card.html', {
+                                 'img': 'hpv.png',
+                                 'alt': 'HPV',
+                                 'title': 'Prin ce se diferențiază HPV',
+                             })
+                             @@include('./components/cards/image-card.html', {
+                                 'img': 'hpv.png',
+                                 'alt': 'HPV',
+                                 'title': 'Prin ce se diferențiază HPV',
+                             })
+                             @@include('./components/cards/image-card.html', {
+                                 'img': 'hpv.png',
+                                 'alt': 'HPV',
+                                 'title': 'Prin ce se diferențiază HPV',
+                             })
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article with Video Gallery -->
+            <article class="article">
+                <header class="article-header article-header__link">
+                    <h3>Videografice</h3>
+                    <a class="link link__secondary" href="#">Vezi mai multe</a>
+                </header>
+                <div class="article-body">
+                    <div class="videos">
+                        <div class="videos-grid">
+                             @@include('./components/cards/video-card.html', {
+                                 'img': 'hpv-thumbnail.png',
+                                 'alt': 'HPV',
+                                 'title': 'Prin ce se diferențiază HPV',
+                                 'type-card': '',
+                             })
+                             @@include('./components/cards/video-card.html', {
+                                 'img': 'hpv-thumbnail.png',
+                                 'alt': 'HPV',
+                                 'title': 'Prin ce se diferențiază HPV',
+                                 'type-card': '',
+                             })
+                             @@include('./components/cards/video-card.html', {
+                                 'img': 'hpv-thumbnail.png',
+                                 'alt': 'HPV',
+                                 'title': 'Prin ce se diferențiază HPV',
+                                 'type-card': '',
+                             })
+                             @@include('./components/cards/video-card.html', {
+                                 'img': 'hpv-thumbnail.png',
+                                 'alt': 'HPV',
+                                 'title': 'Prin ce se diferențiază HPV',
+                                 'type-card': '',
+                             })
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article with Infographics -->
+            <article class="article">
+                <header class="article-header article-header__link">
+                    <h3>Videografice</h3>
+                    <a class="link link__secondary" href="#">Vezi mai multe</a>
+                </header>
+                <div class="article-body">
+                    <div class="tabs tabs-nav">
+                        <a href='#' class='button button__outline'>
+                          Vaccinare
+                        </a>
+                        <a href='#' class='button button__outline'>
+                          Tusea convulsivă
+                        </a>
+                        <a href='#' class='button button__outline'>
+                          Tuberculoza
+                        </a>
+                        <a href='#' class='button button__outline'>
+                          Rujeola & Rubeola
+                        </a>
+                        <a href='#' class='button button__outline'>
+                          Poliomielita
+                        </a>
+                        <a href='#' class='button button__outline'>
+                          Rotavirusul
+                        </a>
+                        <a href='#' class='button button__outline'>
+                          Pneumococi
+                        </a>
+                        <a href='#' class='button button__outline'>
+                          Papilomavirusul uman
+                        </a>
+                        <a href='#' class='button button__outline'>
+                          Hepatita B
+                        </a>
+                        <a href='#' class='button button__outline'>
+                          COVID-19
+                        </a>
+                        <a href='#' class='button button__outline'>
+                          Gripa
+                        </a>
+                        <a href='#' class='button button__outline'>
+                            Difteria
+                        </a>
+                        <a href='#' class='button button__outline'>
+                          Oreionul
+                        </a>
+                        <a href='#' class='button button__outline'>
+                          Tetanosul
+                        </a>
+                        <a href='#' class='button button__outline'>
+                          Alăptare
+                        </a>
+                    </div>
+                    <div class="infographs">
+                        <div class='infographs-grid'>
+                          @@include('./components/cards/infograph-card.html', {'img': 'vaccinurile-pentru-maturi.png'})
+                          @@include('./components/cards/infograph-card.html', {'img': 'vaccinurile-pentru-maturi.png'})
+                          @@include('./components/cards/infograph-card.html', {'img': 'vaccinurile-pentru-maturi.png'})
+                          @@include('./components/cards/infograph-card.html', {'img': 'vaccinurile-pentru-maturi.png'})
+                          @@include('./components/cards/infograph-card.html', {'img': 'vaccinurile-pentru-maturi.png'})
+                          @@include('./components/cards/infograph-card.html', {'img': 'vaccinurile-pentru-maturi.png'})
+                          @@include('./components/cards/infograph-card.html', {'img': 'vaccinurile-pentru-maturi.png'})
+                          @@include('./components/cards/infograph-card.html', {'img': 'vaccinurile-pentru-maturi.png'})
+                          @@include('./components/cards/infograph-card.html', {'img': 'vaccinurile-pentru-maturi.png'})
+                          @@include('./components/cards/infograph-card.html', {'img': 'vaccinurile-pentru-maturi.png'})
+                          @@include('./components/cards/infograph-card.html', {'img': 'vaccinurile-pentru-maturi.png'})
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+  </main>
+  @@include('./components/footer.html')
+
+
+  <!-- GSAP JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- FSLightbox -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.0.9/index.min.js" integrity="sha512-03Ucfdj4I8Afv+9P/c9zkF4sBBGlf68zzr/MV+ClrqVCBXWAsTEjIoGCMqxhUxv1DGivK7Bm1IQd8iC4v7X2bw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
