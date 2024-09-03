@@ -121,3 +121,19 @@
         margin:24px auto 0;
     }
 }
+
+// Search Section
+.search-results {
+    min-height: 500px;
+
+    &__resources {
+        @include adaptiv-value('margin-bottom', 48, 24, 1);
+    }
+
+    &__articles,
+    &__resources {
+        h3 {
+            margin-bottom: 12px;
+        }
+    }
+}
