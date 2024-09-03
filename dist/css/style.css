@@ -439,7 +439,28 @@ input {
 }
 
 .grid-5 {
-  grid-template-columns: repeat(5, 1fr);
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 10px;
+}
+.grid-5 > a {
+  display: block;
+  grid-column: span 4;
+}
+@media (max-width: 47.99875rem) {
+  .grid-5 > a {
+    grid-column: span 5;
+  }
+}
+@media (max-width: 39.99875rem) {
+  .grid-5 > a {
+    grid-column: span 10;
+  }
+}
+.grid-5 > a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .grid-6 {
@@ -537,6 +558,17 @@ input {
 }
 .tabs__content--active {
   display: block;
+}
+
+.square-image {
+  width: 100%;
+  height: 218px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.full-content {
+  margin: 40px 0;
 }
 
 .no-footer-bg .footer {
@@ -1692,6 +1724,52 @@ input {
   border: 1px solid #007AFF;
 }
 
+.photo-slider__slider {
+  position: relative;
+  margin-top: 24px;
+}
+.photo-slider__slider .slider-photo__body {
+  width: calc(100% - 130px);
+}
+.photo-slider__slider .slider-photo__body .slider-photo__slide {
+  height: 630px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+}
+@media (max-width: 1128px) {
+  .photo-slider__slider .slider-photo__body .slider-photo__slide {
+    height: calc(
+                400px + 230 * ((100vw - 320px) / 808)
+            );
+  }
+}
+.photo-slider__slider .slider-photo__body .slider-photo__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.photo-slider__slider .slider-photo__body .slider-photo__slide p {
+  text-align: center;
+}
+.photo-slider__slider .slider-photo-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.photo-slider__slider .slider-photo-controls__arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.photo-slider__slider .slider-photo-controls__arrows .slider-arrow__prev i {
+  transform: rotate(180deg);
+}
 .hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -1918,32 +1996,4 @@ input {
 .background-illustrations .right-illustration-6 {
   top: 110%;
   right: 5%;
-}
-
-.infographs {
-  margin: 40px 0;
-}
-.infographs-grid {
-  display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  gap: 10px;
-}
-.infographs-card {
-  display: block;
-  grid-column: span 4;
-}
-@media (max-width: 47.99875rem) {
-  .infographs-card {
-    grid-column: span 5;
-  }
-}
-@media (max-width: 39.99875rem) {
-  .infographs-card {
-    grid-column: span 10;
-  }
-}
-.infographs-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
