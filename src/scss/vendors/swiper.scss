@@ -1,14 +1,11 @@
-// Benefits Hero Slider
-.benefits {
+.benefits-slider__slider {
     background-color: $main-aliceblue;
     @include border-rounded-shadow(transparent, 0, $blue-shadow);
     padding: 16px;
-
     @media (max-width: $tablet) {
         grid-column: 1 / span 12;
         grid-row: 2 / span 2;
     }
-
     @media (max-width: $mobileMedium) {
         grid-column: span 12;
         grid-row: 3
