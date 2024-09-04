@@ -1,7 +1,7 @@
 // Benefits Hero Slider
 .benefits {
     background-color: $main-aliceblue;
-    @include border-rounded-shadow(unset, 0, $blue-shadow);
+    @include border-rounded-shadow(transparent, 0, $blue-shadow);
     padding: 16px;
 
     @media (max-width: $tablet) {
@@ -21,35 +21,12 @@
             text-align: center;
         }
 
-        &__title {
-            font-size: 20px;
-            padding-bottom: 16px;
-        }
 
-        &__img {
-            display: block;
-            margin: 0 auto 16px;
-            width: 100%;
-            height: 100%;
-        }
-
-        &__description {
-            font-size: 16px;
-        }
 
         &__pagination {
             bottom: 9px;
 
-            .swiper-pagination-bullet {
-                width: 11px;
-                height: 11px;
-                border: 1px solid $text-main;
-                background-color: transparent;
-
-                &-active {
-                    border: 1px solid $main-blue;
-                }
-            }
+            .swiper-pagination-bullet {}
         }
     }
 }
@@ -57,22 +34,39 @@
 .benefits-slider__slider {
     .slider-benefits__body {
         .slider-benefits__slide {
+            .title {
+                font-size: 20px;
+                padding-bottom: 16px;
+            }
 
+            .img {
+                display: block;
+                margin: 0 auto 16px;
+                width: 100%;
+                height: 100%;
+            }
+
+            .description {
+                font-size: 16px;
+            }
         }
-
-        .slider-benefits-controls {
-            &__dots {
-                .swiper-pagination-bullet {
-                    &-active {}
+    }
+    .slider-benefits-controls {
+        margin-top: 16px;
+        &__dots {
+            display: block;
+            margin: 0 auto;
+            transform: translateX(0);
+            .swiper-pagination-bullet {
+                width: 11px;
+                height: 11px;
+                border: 1px solid $text-main;
+                background-color: transparent;
+                &-active {
+                    border: 1px solid $main-blue;
                 }
             }
-            &__arrows {
-                .slider-arrow {
-                    &__prev {}
 
-                    &__next {}
-                }
-            }
         }
     }
 }

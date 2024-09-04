@@ -94,6 +94,7 @@ $mobileSmall: rem(479.98px);
 // Importing Component Styles
 @import 'layout/footer.scss';
 @import 'layout/header.scss';
+@import 'layout/grid.scss';
 @import 'components/dropdown.scss';
 @import 'components/burger.scss';
 @import 'components/buttons.scss';
@@ -102,6 +103,8 @@ $mobileSmall: rem(479.98px);
 @import 'components/accordion.scss';
 @import 'components/modal.scss';
 @import 'components/page-intro.scss';
+@import 'components/article.scss';
+@import 'components/tabs.scss';
 @import 'vendors/swiper.scss';
 
 // Importing Page Sections
@@ -109,3 +112,4 @@ $mobileSmall: rem(479.98px);
 
 // Importing Page Styles
 @import 'pages/home.scss';
+@import 'pages/articles.scss';

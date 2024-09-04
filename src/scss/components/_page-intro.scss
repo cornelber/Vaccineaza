@@ -1,7 +1,7 @@
 .page-intro {
   @include adaptiv-value("padding-top", 40, 20, 1);
   @include adaptiv-value("padding-bottom", 40, 20, 1);
-  background-color: #FFF;
+  background-color: $white;
   i {
     display: block;
     width: fit-content;
@@ -21,6 +21,11 @@
     text-align: center;
     margin-bottom: 24px;
   }
+  p {
+    text-align: center;
+    margin-bottom: 24px;
+    color: $text-secondary;
+  }
   &__tabs {
     display: flex;
     align-items: center;
@@ -30,6 +35,41 @@
     a {
       width: fit-content;
       @include adaptiv-value("font-size", 16, 14, 1);
+    }
+  }
+  .search-form {
+    position: relative;
+    max-width: 552px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 8px;
+    input {
+      width: 100%;
+      padding: 12px 48px 12px 12px;
+      border: 1px solid $gray-stroke;
+      border-radius: 1000px;
+      color: $text-main;
+      transition: 0.2s;
+      &:focus {
+        border-color: $gray-stroke-hover;
+      }
+    }
+    button {
+      position: absolute;
+      @include flex-center;
+      right: 12px;
+      width: 20px;
+      height: 20px;
+
+      i {
+        font-size: 20px;
+        background-color: unset;
+        border: unset;
+        padding: unset;
+        margin: unset;
+      }
     }
   }
 }

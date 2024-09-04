@@ -1,0 +1,61 @@
+.photos,
+.infographs {
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        gap: 10px;
+    }
+    &-card {
+        display: block;
+        grid-column: span 4;
+        @media (max-width: $mobile) {
+            grid-column: span 5;
+        }
+        @media (max-width: $mobileMedium) {
+            grid-column: span 10;
+              
+        }
+    }    
+}
+
+.videos {
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 10px;
+    }
+    &-card {
+        display: block;
+        grid-column: span 6;
+        @media (max-width: $mobileMedium) {
+            grid-column: span 12;
+              
+        }
+        &.huge {
+            grid-column: span 12;
+        }
+    }
+}
+
+.protocols {
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        @include adaptiv-value('row-gap', 48, 24, 1);
+        column-gap: 24px;
+    }
+
+    &-card {
+        grid-column: span 2;
+
+        @media (max-width: $tablet) {
+            grid-column: span 4;
+        }
+        @media (max-width: $mobileMedium) {
+            grid-column: span 6;
+        }
+        @media (max-width: $mobile) {
+            grid-column: span 12;
+        }
+    }
+}

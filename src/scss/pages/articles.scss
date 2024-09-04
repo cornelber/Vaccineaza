@@ -1,0 +1,36 @@
+.articles {
+    margin: 0 30px;
+
+    @media (max-width: $tablet) {
+        margin: unset;
+    }
+}
+
+.social-share {
+    width: 100%;
+    position: sticky;
+    top: 40dvh;
+    display: flex;
+    justify-content: flex-end;
+
+    &__wrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: -50px;
+    }
+
+    .social-links__item {
+        margin-bottom: 8px;
+    }
+
+    .social-links__icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    @media (max-width: $tablet) {
+        display: none;
+    }
+}

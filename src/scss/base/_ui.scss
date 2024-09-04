@@ -65,6 +65,10 @@ input {
     display: flex;
 }
 
+.direction-column {
+    flex-direction: column;
+}
+
 .col-1 {
     grid-column: 1 span;
 }

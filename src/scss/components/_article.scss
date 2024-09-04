@@ -1,0 +1,133 @@
+.article {
+    border: 1px solid $gray-stroke;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    position: relative;
+
+    &-header {
+        padding: 24px;
+        background-color: $main-aliceblue;
+        gap: 8px;
+        @include flex(row, space-between, center);
+
+
+        &__date {
+            @include flex(column, flex-start, flex-start);
+
+            .date-details {
+                @include flex(row, flex-start, center);
+                gap: 4px;
+                color: $text-secondary;
+                font-size: 14px;
+                text-transform: uppercase;
+                
+            }
+        }
+
+        &__top {
+
+            h3 {
+                @include adaptiv-value("font-size", 40, 28, 1);
+
+            }
+        }
+
+        h3 {
+            font-weight: 500;
+        }
+    }
+
+    &-body {
+        @include flex(column, flex-start, flex-start);
+        padding: 24px;
+        gap: 24px;
+        background-color: $white;
+
+        .tabs-nav {
+            a {
+                text-decoration: none;
+            }
+        }
+
+        a {
+            color: $main-blue;
+            text-decoration: underline;
+        }
+
+        p {
+            color: $text-secondary;
+            @include adaptiv-value('line-height', 24, 22, 1);
+        }
+
+        ol,
+        ul {
+            color: $text-secondary;
+            @include adaptiv-value('font-size', 16, 12, 1);
+            @include adaptiv-value('line-height', 24, 22, 1);
+            
+            li {
+
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+
+        ol li{
+            list-style: disc;
+            list-style-position: inside;
+
+            &::marker {
+                color: $main-blue;
+            }
+        }
+        
+        ul li {
+            list-style: none;
+            counter-increment: list-counter; 
+            list-style-position: inside;
+
+            &::before {
+                content: counter(list-counter) " - ";
+            }
+        }
+
+        img {
+            max-width: 1080px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        &__author {
+            @include flex(row, flex-start, center);
+            width: 100%;
+
+            img {
+                max-width: 120px;
+                width: 100%;
+                height: auto;
+                border-radius: 100%;
+                border: 2px solid $main-blue;
+            }
+
+            .author-details {
+                margin-left: 16px;
+
+                p {
+                    @include adaptiv-value('font-size', 14, 12, 1);
+                }
+            }
+        }
+
+        .infographs,
+        .photos {
+            &-card {
+                &:nth-child(n+8) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -21,9 +21,9 @@ if (document.querySelectorAll('[data-dropdown]')) {
 }
 
 
-new Swiper(".slider-benefits", {
+new Swiper(".slider-benefits__body", {
     pagination: {
-        el: ".swiper-pagination",
+        el: ".slider-benefits-controls__dots",
         dynamicBullets: true,
     },
 })
