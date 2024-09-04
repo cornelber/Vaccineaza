@@ -13,22 +13,6 @@
         grid-column: span 12;
         grid-row: 3
     }
-
-    .slider-benefits {
-        padding-bottom: 36px;
-
-        &__body {
-            text-align: center;
-        }
-
-
-
-        &__pagination {
-            bottom: 9px;
-
-            .swiper-pagination-bullet {}
-        }
-    }
 }
 
 .benefits-slider__slider {
@@ -56,7 +40,7 @@
         &__dots {
             display: block;
             margin: 0 auto;
-            transform: translateX(0);
+            transform: translateX(0) !important;
             .swiper-pagination-bullet {
                 width: 11px;
                 height: 11px;

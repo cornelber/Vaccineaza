@@ -2252,15 +2252,7 @@ input {
     grid-row: 3;
   }
 }
-.benefits .slider-benefits {
-  padding-bottom: 36px;
-}
-.benefits .slider-benefits__body {
-  text-align: center;
-}
-.benefits .slider-benefits__pagination {
-  bottom: 9px;
-}
+
 .benefits-slider__slider .slider-benefits__body .slider-benefits__slide .title {
   font-size: 20px;
   padding-bottom: 16px;
@@ -2280,7 +2272,7 @@ input {
 .benefits-slider__slider .slider-benefits-controls__dots {
   display: block;
   margin: 0 auto;
-  transform: translateX(0);
+  transform: translateX(0) !important;
 }
 .benefits-slider__slider .slider-benefits-controls__dots .swiper-pagination-bullet {
   width: 11px;
