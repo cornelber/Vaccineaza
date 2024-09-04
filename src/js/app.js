@@ -21,9 +21,19 @@ if (document.querySelectorAll('[data-dropdown]')) {
 }
 
 
-new Swiper(".slider-benefits", {
+new Swiper(".slider-benefits__body", {
+    observer: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    effect: 'slide',
+    simulateTouch: true,
+    preloadImages: false,
+    lazy: true,
+
     pagination: {
         el: ".swiper-pagination",
+        clickable: true,
         dynamicBullets: true,
     },
 })
