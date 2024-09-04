@@ -2237,11 +2237,7 @@ input {
   background-color: #F2F8FF;
   border-radius: 0;
   box-shadow: #BAD5F3 4px 4px 0px;
-<<<<<<< HEAD
   border: 1px solid transparent;
-=======
-  border: 1px solid unset;
->>>>>>> 712a5c9 (berlion(bugfix): fixed bug with overflow on illustrations bg and changed animation)
   padding: 16px;
 }
 @media (max-width: 61.99875rem) {
@@ -2255,7 +2251,6 @@ input {
     grid-column: span 12;
     grid-row: 3;
   }
-<<<<<<< HEAD
 }
 
 .benefits-slider__slider .slider-benefits__body .slider-benefits__slide .title {
@@ -2263,19 +2258,6 @@ input {
   padding-bottom: 16px;
 }
 .benefits-slider__slider .slider-benefits__body .slider-benefits__slide .img {
-=======
-}
-.benefits-slider__slider .slider-benefits__body {
-  margin-bottom: 16px;
-}
-.benefits-slider__slider .slider-benefits__body .slider-benefits__slide {
-  text-align: center;
-}
-.benefits-slider__slider .slider-benefits__body .slider-benefits__slide-title {
-  padding-bottom: 16px;
-}
-.benefits-slider__slider .slider-benefits__body .slider-benefits__slide-img {
->>>>>>> 712a5c9 (berlion(bugfix): fixed bug with overflow on illustrations bg and changed animation)
   display: block;
   margin: 0 auto 16px;
   width: 100%;
@@ -2288,34 +2270,18 @@ input {
   margin-top: 16px;
 }
 .benefits-slider__slider .slider-benefits-controls__dots {
-<<<<<<< HEAD
   display: block;
   margin: 0 auto;
   transform: translateX(0) !important;
-=======
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  bottom: 0;
->>>>>>> 712a5c9 (berlion(bugfix): fixed bug with overflow on illustrations bg and changed animation)
 }
 .benefits-slider__slider .slider-benefits-controls__dots .swiper-pagination-bullet {
   width: 11px;
   height: 11px;
   border: 1px solid #262626;
   background-color: transparent;
-<<<<<<< HEAD
 }
 .benefits-slider__slider .slider-benefits-controls__dots .swiper-pagination-bullet-active {
   border: 1px solid #007AFF;
-=======
-  transition: all 0.4s ease-in-out;
-}
-.benefits-slider__slider .slider-benefits-controls__dots .swiper-pagination-bullet-active-main {
-  border-color: #007AFF;
->>>>>>> 712a5c9 (berlion(bugfix): fixed bug with overflow on illustrations bg and changed animation)
 }
 
 .photo-slider__slider {
@@ -2482,7 +2448,6 @@ input {
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-bottom: 48px;
 }
 @media (max-width: 39.99875rem) {
   .news {
@@ -2574,14 +2539,11 @@ input {
   overflow: hidden;
   z-index: -1;
 }
-<<<<<<< HEAD
-=======
 @media (max-width: 61.99875rem) {
   .background-illustrations {
     display: none;
   }
 }
->>>>>>> 712a5c9 (berlion(bugfix): fixed bug with overflow on illustrations bg and changed animation)
 .background-illustrations__wrapper {
   position: relative;
   max-width: 1920px;
@@ -2589,56 +2551,16 @@ input {
   height: 100vh;
   margin: 160px auto 0;
 }
-<<<<<<< HEAD
-.background-illustrations .illustration {
-  position: absolute;
-  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
-}
-.background-illustrations .left-illustration {
-=======
 .background-illustrations__wrapper .left-illustrations {
   position: absolute;
->>>>>>> 712a5c9 (berlion(bugfix): fixed bug with overflow on illustrations bg and changed animation)
   top: 0;
   left: 0;
   width: 50%;
   height: 100dvh;
   overflow: hidden;
 }
-<<<<<<< HEAD
-.background-illustrations .left-illustration-1 {
-  top: 5%;
-  left: 2%;
-}
-.background-illustrations .left-illustration-2 {
-  top: 20%;
-  left: 10%;
-}
-.background-illustrations .left-illustration-3 {
-  top: 35%;
-  left: 3%;
-}
-.background-illustrations .left-illustration-4 {
-  top: 55%;
-  left: 11%;
-}
-.background-illustrations .left-illustration-5 {
-  top: 65%;
-  left: 2%;
-}
-.background-illustrations .left-illustration-6 {
-  top: 90%;
-  left: 10%;
-}
-.background-illustrations .left-illustration-7 {
-  top: 110%;
-  left: 4%;
-}
-.background-illustrations .right-illustration {
-=======
 .background-illustrations__wrapper .right-illustrations {
   position: absolute;
->>>>>>> 712a5c9 (berlion(bugfix): fixed bug with overflow on illustrations bg and changed animation)
   top: 0;
   right: 0;
   width: 50%;
