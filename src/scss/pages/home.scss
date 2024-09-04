@@ -1,10 +1,11 @@
-// // Illustrations
+// Illustrations
 .background-images {
     position: fixed; 
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
     z-index: -2;
     
     &__wrapper {
@@ -46,19 +47,40 @@
 }
 
 .background-illustrations {
-    position: absolute;
-    top: 160px;
+    position: fixed;
+    top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
     z-index: -1;
-
+    @media (max-width: $tablet) {
+        display: none;
+    }
     &__wrapper {
         position: relative;
         max-width: 1920px;
         width: 100%;
         height: 100vh;
-        margin: 0 auto;
+        margin: 160px auto 0;
+
+        .left-illustrations {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100dvh;
+            overflow: hidden;
+        }
+
+        .right-illustrations {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100dvh;
+            overflow: hidden;
+        }
     }
 
     .illustration {
@@ -68,63 +90,59 @@
 
     // Left illustrations
     .left-illustration {
-        @include position-illustration(left, 0, 0);
-
         &-1 {
-            @include position-illustration(left, 5%, 2%);
+            @include position-illustration(left, 5%, 5%);
         }
-
+    
         &-2 {
-            @include position-illustration(left, 20%, 10%);
+            @include position-illustration(left, 20%, 20%);
         }
-
+    
         &-3 {
-            @include position-illustration(left, 35%, 3%);
+            @include position-illustration(left, 35%, 5%);
         }
-
+    
         &-4 {
-            @include position-illustration(left, 55%, 11%);
+            @include position-illustration(left, 50%, 25%);
         }
-
+    
         &-5 {
-            @include position-illustration(left, 65%, 2%);
+            @include position-illustration(left, 65%, 3%);
         }
-
+    
         &-6 {
-            @include position-illustration(left, 90%, 10%);
+            @include position-illustration(left, 80%, 20%);
         }
-
+    
         &-7 {
-            @include position-illustration(left, 110%, 4%);
+            @include position-illustration(left, 95%, 5%);
         }
     }
 
     // Right illustrations
     .right-illustration {
-        @include position-illustration(right, 0, null, 0);
-
         &-1 {
-            @include position-illustration(right, 5%, null, 10%);
+            @include position-illustration(right, 5%, null, 25%);
         }
-
+    
         &-2 {
-            @include position-illustration(right, 20%, null, 2%);
+            @include position-illustration(right, 15%, null, 5%);
         }
-
+    
         &-3 {
-            @include position-illustration(right, 45%, null, 9%);
+            @include position-illustration(right, 35%, null, 20%);
         }
-
+    
         &-4 {
-            @include position-illustration(right, 60%, null, 2%);
+            @include position-illustration(right, 40%, null, 3%);
         }
-
+    
         &-5 {
-            @include position-illustration(right, 85%, null, 9%);
+            @include position-illustration(right, 65%, null, 25%);
         }
-
+    
         &-6 {
-            @include position-illustration(right, 110%, null, 5%);
+            @include position-illustration(right, 80%, null, 5%);
         }
     }
 }
